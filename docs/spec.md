@@ -7,9 +7,7 @@ Este documento detalha a arquitetura técnica, o modelo de dados e os contratos 
 Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura do nosso "banco de dados" (`db.json`) e como as informações se conectam.
 
 
-%% As cores são simuladas via configurações de tema e estilos inline.
-%% O Mermaid ER diagram não dá suporte direto à cor por atributo,
-%% mas podemos aplicar estilos gerais por entidade.
+```mermaid
 erDiagram
     USUARIO ||--o{ PROPRIEDADE : "possui"
     PROPRIEDADE ||--o{ ANIMAL : "abriga"
@@ -35,11 +33,6 @@ erDiagram
         string genero "Macho ou fêmea"
         string vacinas "Lista de vacinas aplicadas"
     }
-
-    %% Aplicando estilos gerais
-    style USUARIO fill:#333333,stroke:#4d4d4d,color:#ffffff
-    style PROPRIEDADE fill:#333333,stroke:#4d4d4d,color:#ffffff
-    style ANIMAL fill:#333333,stroke:#4d4d4d,color:#ffffff
 
 ## 2. Dicionário de Dados
 
