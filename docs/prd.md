@@ -2,35 +2,36 @@
 
 ## 1. Visão Geral e Objetivo
 
-O **Roubank** é uma aplicação web didática que simula as operações básicas de uma instituição financeira (abertura de conta, depósitos, saques e extratos).
+Com o crescimento exponencial das tarefas, obrigações e custos operacionais, os produtores rurais frequentemente enfrentam dificuldades para gerenciar todas as demandas de suas propriedades, o que pode resultar no esquecimento de atividades essenciais. Essa situação pode acarretar perdas financeiras, aumento do estresse e impactos negativos na vida pessoal.
 
-**O grande diferencial (Regra de Negócio Principal):** Ao contrário dos bancos tradicionais modernos, o Roubank cobra **taxas abusivas** para absolutamente qualquer operação que o cliente realize. O objetivo do sistema é registrar as movimentações financeiras do usuário sempre subtraindo uma porcentagem ou valor fixo sob o pretexto de "taxas de manutenção" ou "impostos do banco".
+Diante desse cenário, o projeto tem como objetivo facilitar o cotidiano do produtor rural, oferecendo uma ferramenta que proporcione maior organização e controle das atividades, diretamente na palma da mão.
 
 ## 2. Atores do Sistema
 
-- **Visitante:** Usuário não autenticado que acessa a página inicial e deseja abrir uma conta.
-- **Cliente:** Usuário autenticado que possui saldo (ou dívidas) no banco e realiza operações financeiras.
-- **O Banco (Sistema):** Ator invisível que aplica as regras de negócio e desconta as taxas automaticamente a cada transação do Cliente.
+- **Visitante:** Usuário ainda não registrado que pretende se cadastrar no sistema.
+- **Cliente:** Usuário que tem uma conta registrada, e pode listar sua propriedades cadastradas, assim podendo gerenciar os seus animais.
 
 ## 3. Histórias de Usuário e Escopo
 
 Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), escritas sob a perspectiva do usuário final.
 
-### 👤 Épico 1: Autenticação e Conta
+### 👨‍🌾 Épico 1: Cadastro
 
-- **US01 - Abertura de Conta:** Como um Visitante, quero preencher um formulário com meus dados pessoais (Nome, CPF, Senha) para criar uma nova conta no Roubank.
-  - _Critérios de Aceitação:_ O CPF deve ser validado; todos os campos são obrigatórios; a conta deve iniciar com saldo R$ 0,00.
-- **US02 - Acesso ao Sistema (Login):** Como um Cliente, quero inserir meu CPF e Senha para acessar meu painel financeiro.
+- **US01 - Cadastro do visitante:** Como um Visitante, quero preencher um formulário (Nome, E-mail e Senha) para criar uma conta no Meu Rancho.
+  - _Critérios de Aceitação:_ O nome deve ser válido (Não conter números, símbolos, etc);todos os campos são obrigatórios.
+- **US02 - Login:** Como um usuário, quero inserir meu e-mail e/ou nome e senha para acessar a página inicial.
 
-### 💰 Épico 2: Movimentações Financeiras
+### 🌳  Épico 2: Propriedades
 
-- **US03 - Visualização de Saldo:** Como um Cliente logado, quero ver meu saldo total atualizado em destaque no painel principal, para saber quanto dinheiro (ainda) tenho.
-- **US04 - Realizar Depósito:** Como um Cliente, quero informar um valor para depositar na minha conta.
-  - _Critérios de Aceitação:_ O valor deve ser positivo; o sistema deve cobrar uma **"Taxa de Depósito" (ex: 2% do valor)** e creditar apenas o valor líquido na conta do cliente.
-- **US05 - Realizar Saque:** Como um Cliente, quero informar um valor para sacar da minha conta.
-  - _Critérios de Aceitação:_ O cliente não pode sacar mais do que o saldo disponível + limite; o sistema deve cobrar uma **"Taxa de Saque" (ex: R$ 5,00 fixos por saque)**, descontando o valor do saque + a taxa do saldo total.
+- **US03 - Cadastro de propriedades:** Como um Usuário, quero quero poder adicionar minhas propriedades.
+- **US04 - Listagem de propriedades:** Como um Usuário, quero que seja possível visualizar todas as minhas propriedades adicionadas.
+- **US05 - Busca de propriedades:** Como um Usuário, quero informar um nome de busca, para localizar uma propriedade cadastrada em específico.
+  - _Critérios de Aceitação:_ Não deve haver caracteres especiais; deve funcionar mesmo com o nome parcialmente escrito.
 
-### 📊 Épico 3: Histórico e Transparência
+### 🐄 Épico 3: Animais
 
-- **US06 - Visualizar Extrato:** Como um Cliente, quero visualizar uma lista (tabela ou cards) com o histórico de todas as minhas transações (depósitos e saques).
-  - _Critérios de Aceitação:_ A lista deve mostrar a data, o tipo de transação, o valor bruto e **o valor da taxa cobrada** pelo Roubank, deixando claro o quanto o cliente perdeu na operação.
+- **US06 - Cadastro de animais:** Como um Usuário, quero cadastrar meus animais.
+  - _Critérios de Aceitação:_ Deve haver um brinco numerado, para a realizar o cadastro do animal com sucesso.
+- **US07 - Seleção de características dos animais:** Como um Usuário, quero poder selecionar a idade, raça (opcional), e gênero do animal.
+  - _Critérios de Aceitação:_ Deve haver uma lista para cada um dos itens.
+- **US08 - Cadastro de vacinas:** Como Usuário, quero poder associar vacinas para um animal ou mais.
