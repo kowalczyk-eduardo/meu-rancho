@@ -1,7 +1,7 @@
 # meu-rancho
 
 ### **Autor:** Eduardo Kowalczyk
-Desenvolvimento de um projeto para facilitar o gerenciamento de animais de uma propriedade rural. Inclui funcionalidade de cadastro pessoal, de propriedades e animais.
+Desenvolvimento de um projeto para facilitar o gerenciamento de animais em uma propriedade rural. Inclui funcionalidades de cadastro pessoal, de propriedades e animais.
 ## 📚 Documentação do Projeto
 
 
