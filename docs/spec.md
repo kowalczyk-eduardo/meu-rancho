@@ -7,24 +7,39 @@ Este documento detalha a arquitetura técnica, o modelo de dados e os contratos 
 Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura do nosso "banco de dados" (`db.json`) e como as informações se conectam.
 
 ```mermaid
+%% As cores são simuladas via configurações de tema e estilos inline.
+%% O Mermaid ER diagram não dá suporte direto à cor por atributo,
+%% mas podemos aplicar estilos gerais por entidade.
 erDiagram
-CLIENTE ||--o{ TRANSACAO : "realiza (e paga taxa)"
-CLIENTE {
-string id PK "Gerado automaticamente"
-string nome
-string cpf "Usado para o login"
-string senha
-float saldo "Atualizado a cada operação"
-}
-TRANSACAO {
-string id PK
-string clienteId FK "Vínculo com o Cliente"
-string tipo "DEPOSITO, SAQUE ou TAXA"
-float valor
-string data "Formato ISO (YYYY-MM-DD)"
-string descricao "Ex: 'Taxa de manutenção respiratória'"
-}
-```
+    USUARIO ||--o{ PROPRIEDADE : "possui"
+    PROPRIEDADE ||--o{ ANIMAL : "abriga"
+
+    USUARIO {
+        string id PK "Identificador único do usuário"
+        string nome "Nome completo do usuário"
+        string email "Endereço de e-mail"
+        string senha "Credencial de acesso"
+    }
+
+    PROPRIEDADE {
+        string id PK "Identificador da propriedade"
+        string usuarioId FK "Referência ao usuário dono"
+        string endereco "Localização da propriedade"
+    }
+
+    ANIMAL {
+        string id PK "Identificador do animal"
+        string propriedadeId FK "Vínculo com a propriedade"
+        string especie "Ex: cavalo, vaca"
+        float idade "Idade aproximada do animal (em meses)"
+        string genero "Macho ou fêmea"
+        string vacinas "Lista de vacinas aplicadas"
+    }
+
+    %% Aplicando estilos gerais
+    style USUARIO fill:#333333,stroke:#4d4d4d,color:#ffffff
+    style PROPRIEDADE fill:#333333,stroke:#4d4d4d,color:#ffffff
+    style ANIMAL fill:#333333,stroke:#4d4d4d,color:#ffffff
 
 ## 2. Dicionário de Dados
 
