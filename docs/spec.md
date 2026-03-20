@@ -1,6 +1,6 @@
-# 🛠️ Especificação Técnica (Tech Spec) - Roubank
+# 🛠️ Especificação Técnica (Tech Spec) - Meu Rancho
 
-Este documento detalha a arquitetura técnica, o modelo de dados e os contratos de API (via JSON Server) necessários para o funcionamento do sistema bancário Roubank.
+Este documento descreve o modelo de dados da aplicação Meu Rancho
 
 ## 1. Modelo de Dados (Diagrama ER)
 
