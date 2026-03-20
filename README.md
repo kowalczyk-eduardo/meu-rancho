@@ -1,33 +1,22 @@
-# roubank-css
+# meu-rancho
 
-### **Autor:** Roni Fabio Banaszewski
+### **Autor:** Eduardo Kowalczyk
 
-Este projeto tem como objetivo implementar progressivamente e de forma didática uma aplicação web inspirada em operações comuns de instituições financeiras (ex: saque, depósito, extrato, saldo, cadastro), sendo o diferencial, a cobrança de taxas de forma abusiva para cada operação realizada pelo cliente.
-
-O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
 
 ## 📚 Documentação do Projeto
 
-Para entender as regras de negócio, o escopo e a arquitetura técnica da aplicação, consulte os documentos abaixo:
 
-- [📄 Product Requirements Document (PRD)](./docs/prd.md) - Visão geral, atores e histórias de usuário.
-- [🛠️ Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
 
 ## 🎨 Design
 
-- [🎨 Design System](./docs/design-system.md) - Identidade visual
-- [🖼️ Protótipo no Figma](https://www.figma.com/file/a1VDbO1aNfZyulQPxT99OE/beleza-em-dia?node-id=3%3A80) - Telas interativas da aplicação.
+
 
 ## 🌐 Site em Produção - GitHub Pages
 
-https://utfpr-gp.github.io/roubank-css/
+
 
 ## 💻 Tecnologias e Dependências
 
-- **Framework CSS:** MaterializeCSS
-- **JavaScript:**
-  - **JQuery** - Para realizar animações e manipulação do DOM.
-  - **JSON Server** - Para simular uma API REST.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
@@ -72,24 +61,8 @@ https://utfpr-gp.github.io/roubank-css/
 
 ## 🚀 Manual de execução
 
-- Clonar o repositório com `git clone`
-- Fazer checkout no branch `develop` que contém as modificações mais recentes
-- Abrir o projeto no editor Visual Studio Code (VS Code)
-- Abrir um terminal pelo VSCode ou qualquer terminal do seu Sistema Operacional apontando para o diretório raiz do projeto
-- Instalar as dependências contidas no `package.json`
-  - Comando: `npm i`
-- (Opcional) Instalar o JSON Server globalmente disponível em `https://www.npmjs.com/package/json-server`
-  - Comando: `npm i -g json-server`
-  - É opcional porque a dependência já vem cadastrada no arquivo `package.json` para instalação local na pasta `node_modules`
-- Executar a API Fake (JSON Server) via um dos seguintes comandos:
-  - Execução via script registrado no `package.json`: `npm run json:server:routes`
-  - Ou via Execução explícita: `json-server --watch db.json --routes routes.json`
-- O comando para execução do JSON Server deve ser aplicado no diretório raiz do projeto, ou seja, que contém o arquivo `db.json` e `routes.json`.
-  - Por padrão, a aplicação JSON Server executa no endereço `localhost:3000`
-- Executar o projeto frontend.
+
 
 ## 📱 Telas da aplicação
 
-![image](https://github.com/user-attachments/assets/05283ef1-8986-437c-a9a9-55bd99c36727)
-![image](https://github.com/user-attachments/assets/b38a3b57-c182-4a65-84f1-7a2707ec44ea)
-![image](https://github.com/user-attachments/assets/d62133be-d584-4d7d-8f9b-fcbfff5360c3)
+
