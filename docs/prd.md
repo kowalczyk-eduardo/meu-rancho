@@ -1,4 +1,4 @@
-# 📄 Product Requirements Document (PRD) - Roubank
+# 📄 Product Requirements Document (PRD) - Meu Rancho
 
 ## 1. Visão Geral e Objetivo
 
