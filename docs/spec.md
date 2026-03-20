@@ -33,7 +33,7 @@ erDiagram
         string genero "Macho ou fêmea"
         string vacinas "Lista de vacinas aplicadas"
     }
-
+```
 ## 2. Dicionário de Dados
 
 Breve explicação das tabelas principais:
