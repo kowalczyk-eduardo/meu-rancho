@@ -18,7 +18,7 @@ Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, 
 ### 👨‍🌾 Épico 1: Cadastro
 
 - **US01 - Cadastro do visitante:** Como um Visitante, quero preencher um formulário (Nome, E-mail e Senha) para criar uma conta no Meu Rancho.
-  - _Critérios de Aceitação:_ O nome deve ser válido (Não conter números, símbolos, etc);todos os campos são obrigatórios.
+  - _Critérios de Aceitação:_ O nome deve ser válido (Não conter números, símbolos, etc); todos os campos são obrigatórios.
 - **US02 - Login:** Como um usuário, quero inserir meu e-mail e/ou nome e senha para acessar a página inicial.
 
 ### 🌳  Épico 2: Propriedades
