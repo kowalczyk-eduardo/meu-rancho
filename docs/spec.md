@@ -29,6 +29,7 @@ erDiagram
         string id PK "Identificador do animal"
         string propriedadeId FK "Vínculo com a propriedade"
         string especie "Ex: cavalo, vaca"
+        string brinco "Identificação individual do animal"
         float idade "Idade aproximada do animal (em meses)"
         string genero "Macho ou fêmea"
         string vacinas "Lista de vacinas aplicadas"
@@ -38,13 +39,15 @@ erDiagram
 
 Breve explicação das tabelas principais:
 
-- **Clientes:** Responsável por armazenar os dados de autenticação e o saldo consolidado do usuário.
+- **Usuário:** Responsável por armazenar os dados de autenticação.
   - id: Identificador único gerado pelo JSON Server (String ou Hash).
-  - cpf: Chave de acesso do usuário. Em um cenário real seria único, mas para o MVP não há trava estrita no banco, apenas validação no front-end.
-  - saldo: Valor numérico (Float) que representa o dinheiro disponível. Pode ficar negativo devido à cobrança implacável de taxas do banco.
-- **Transações:** Registra o histórico financeiro. Regra de Negócio Crítica: Toda transação de SAQUE ou DEPOSITO feita pelo cliente deve gerar, via JavaScript, uma transação secundária automática do tipo TAXA, subtraindo um valor do saldo do cliente.
-  - clienteId: Chave estrangeira que vincula a transação ao cliente (padrão de nomenclatura exigido pelo JSON Server para rotas aninhadas).
-  - tipo: Aceita apenas os valores "SAQUE", "DEPOSITO" ou "TAXA".
-  - valor: Sempre um número positivo. O front-end decide se soma ou subtrai do saldo geral baseado no tipo.
-
+  - nome: Nome do usuário, pode tanto ser o nome real quanto um apelido.
+  - email: E-mail valido do usuário, usado principalmente para o login.
+  - senha: Senha do usuário.
+- **Propriedade:** Responsável pela identificação das propriedades e animais abrigados.
+- **Animal:** Responsável pela identificação dos animais.
+- espécie: Será obrigatório a escolha de uma espécie, de uma lista já predefinida.
+- idade: 
+- gênero:
+- vacinas:
 
