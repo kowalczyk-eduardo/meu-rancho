@@ -46,8 +46,8 @@ Breve explicação das tabelas principais:
   - senha: Senha do usuário.
 - **Propriedade:** Responsável pela identificação das propriedades e animais abrigados.
 - **Animal:** Responsável pela identificação dos animais.
-- espécie: Será obrigatório a escolha de uma espécie, de uma lista já predefinida.
--   brinco: Será usado para a identificação do animal.
--   idade: Uma lista com idades para serem selecionadas. Ex: 0 a 12 meses, 13 a 24 meses, 25 a 36 meses e + 36 meses.
--   gênero: Seleção de gênero do animal.
--   vacinas: Um card com nome da(s) vacina(s) e a data de aplicação.
+  - espécie: Será obrigatório a escolha de uma espécie, de uma lista já predefinida.
+  - brinco: Será usado para a identificação do animal.
+  - idade: Uma lista com idades para serem selecionadas. Ex: 0 a 12 meses, 13 a 24 meses, 25 a 36 meses e + 36 meses.
+  - gênero: Seleção de gênero do animal.
+  - vacinas: Um card com nome da(s) vacina(s) e a data de aplicação.
