@@ -13,7 +13,7 @@ Diante desse cenário, o projeto tem como objetivo facilitar o cotidiano do prod
 
 ## 3. Histórias de Usuário e Escopo
 
-Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), escritas sob a perspectiva do usuário final.
+Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, que deseja organizar a sua propriedade rural.
 
 ### 👨‍🌾 Épico 1: Cadastro
 
