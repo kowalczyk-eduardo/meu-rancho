@@ -44,7 +44,7 @@ Breve explicação das tabelas principais:
   - nome: Nome do usuário, pode tanto ser o nome real quanto um apelido.
   - email: E-mail valido do usuário, usado principalmente para o login.
   - senha: Senha do usuário.
-- **Propriedade:** Responsável pela identificação das propriedades e animais abrigados.
+- **Propriedade:** Responsável pela identificação das propriedades e abrigar animais.
 - **Animal:** Responsável pela identificação dos animais.
   - espécie: Será obrigatório a escolha de uma espécie, de uma lista já predefinida.
   - brinco: Será usado para a identificação do animal.
