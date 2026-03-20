@@ -4,18 +4,19 @@
 Desenvolvimento de um projeto para facilitar o gerenciamento de animais em uma propriedade rural. Inclui funcionalidades de cadastro pessoal, de propriedades e animais.
 ## 📚 Documentação do Projeto
 
-
+Em andamento.
 
 ## 🎨 Design
 
-
+Em andamento.
 
 ## 🌐 Site em Produção - GitHub Pages
 
-
+Em andamento.
 
 ## 💻 Tecnologias e Dependências
 
+Em andamento.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
@@ -60,8 +61,8 @@ Desenvolvimento de um projeto para facilitar o gerenciamento de animais em uma p
 
 ## 🚀 Manual de execução
 
-
+Em andamento.
 
 ## 📱 Telas da aplicação
 
-
+Em andamento.
