@@ -9,7 +9,7 @@ Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura
 
 ```mermaid
 erDiagram
-    USUARIOS ||--o{ PROPRIEDADE : "possui"
+    USUARIO ||--o{ PROPRIEDADE : "possui"
     PROPRIEDADE ||--o{ ANIMAL : "abriga"
 
     USUARIO {
