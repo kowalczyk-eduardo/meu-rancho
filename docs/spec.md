@@ -12,20 +12,20 @@ erDiagram
     USUARIO ||--o{ PROPRIEDADE : "possui"
     PROPRIEDADE ||--o{ ANIMAL : "abriga"
 
-    USUARIOS {
+    USUARIO {
         string id PK "Identificador único do usuário"
         string nome "Nome completo do usuário"
         string email "Endereço de e-mail"
         string senha "Credencial de acesso"
     }
 
-    PROPRIEDADES {
+    PROPRIEDADE {
         string id PK "Identificador da propriedade"
         string usuarioId FK "Referência ao usuário dono"
         string endereco "Localização da propriedade"
     }
 
-    ANIMAIS {
+    ANIMAL {
         string id PK "Identificador do animal"
         string propriedadeId FK "Vínculo com a propriedade"
         string especie "Ex: cavalo, vaca"
