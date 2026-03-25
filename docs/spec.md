@@ -29,7 +29,7 @@ erDiagram
         string id PK "Identificador do animal"
         string propriedadeId FK "Vínculo com a propriedade"
         string brinco "Identificação individual do animal"
-        float idade "Idade aproximada do animal (em meses)"
+        number idade "Idade aproximada do animal (em meses)"
         string genero "Macho ou fêmea"
         string vacinas "Lista de vacinas aplicadas"
     }
@@ -45,7 +45,6 @@ Breve explicação das tabelas principais:
   - senha: Senha do usuário.
 - **Propriedade:** Responsável pela identificação das propriedades e abrigar animais.
 - **Animal:** Responsável pela identificação dos animais.
-  - espécie: Será obrigatório a escolha de uma espécie, de uma lista já predefinida.
   - brinco: Será usado para a identificação do animal.
   - idade: Uma lista com idades para serem selecionadas. Ex: 0 a 12 meses, 13 a 24 meses, 25 a 36 meses e + 36 meses.
   - gênero: Seleção de gênero do animal.
