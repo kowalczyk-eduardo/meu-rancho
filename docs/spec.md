@@ -28,7 +28,6 @@ erDiagram
     ANIMAL {
         string id PK "Identificador do animal"
         string propriedadeId FK "Vínculo com a propriedade"
-        string especie "Ex: cavalo, vaca"
         string brinco "Identificação individual do animal"
         float idade "Idade aproximada do animal (em meses)"
         string genero "Macho ou fêmea"
