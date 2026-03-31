@@ -20,7 +20,8 @@ Em andamento.
 
 ## 💻 Tecnologias e Dependências
 
-Em andamento.
+- **Framework CSS:** Bootstrap
+- **GiroRuralAPI:**
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
