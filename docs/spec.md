@@ -49,3 +49,8 @@ Breve explicação das tabelas principais:
   - idade: Uma lista com idades para serem selecionadas. Ex: 0 a 12 meses, 13 a 24 meses, 25 a 36 meses e + 36 meses.
   - gênero: Seleção de gênero do animal.
   - vacinas: Um card com nome da(s) vacina(s) e a data de aplicação.
+
+## 3. Versões das Tecnologias
+
+- **Bootstrap:** v5.3
+- **GiroRuralAPI** v1
