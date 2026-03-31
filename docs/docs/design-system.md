@@ -1,11 +1,11 @@
-# 🎨 Design System - Roubank
+# 🎨 Design System - Meu Rancho
 
 Neste projeto, utilizamos um framework UI e aplicamos customizações pontuais para refletir a identidade visual.
 
 ### 1. Framework Base
 
-- **Framework escolhido:** MaterializeCSS
-- **Motivação:** Oferece componentes baseados no Material Design, permitindo uma prototipagem rápida e um visual corporativo, limpo e confiável.
+- **Framework escolhido:** Bootstrap
+- **Motivação:** Permite criar interfaces responsivas e visualmente organizadas de forma rápida, utilizando componentes e estilos prontos, o que facilita o aprendizado inicial sem exigir conhecimento avançado de CSS.
 
 ### 2. Paleta de Cores (Customização)
 
