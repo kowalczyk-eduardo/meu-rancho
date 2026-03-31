@@ -8,7 +8,7 @@ Em andamento.
 
 ## 🎨 Design
 
-Em andamento.
+[Meu Rancho](https://stitch.withgoogle.com/preview/911675141265227790?node-id=680d429cddd54cc1917bd823b1960d1b)
 
 ## 🌐 Site em Produção - GitHub Pages
 
