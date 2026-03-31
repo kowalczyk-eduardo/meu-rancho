@@ -9,13 +9,11 @@ Neste projeto, utilizamos um framework UI e aplicamos customizações pontuais p
 
 ### 2. Paleta de Cores (Customização)
 
-As variáveis de cor do framework foram escolhidas para induzir o usuário ao erro ou alertá-lo (tarde demais) sobre as taxas:
+As variáveis de cor do sistema foram definidas para transmitir confiabilidade, solidez e sofisticação rural, alinhadas ao conceito "Modern Agrarian", utilizando tons terrosos e naturais.
 
-- **Cor Primária (Atenção/Taxas):** `#D32F2F` _(Red darken-2)_
-  - _Uso:_ Botões de confirmação de transações (saque, depósito), ícones de taxas no extrato e alertas. Representa o perigo constante para o bolso do cliente.
-- **Cor Secundária (Base):** `#212121` _(Grey darken-4)_
-  - _Uso:_ Barra de navegação (Navbar), rodapé e textos de destaque. Transmite frieza institucional.
-- **Cor de Fundo (Background):** `#F5F5F5` _(Grey lighten-4)_
-  - _Uso:_ Fundo de todas as páginas para destacar os painéis brancos flutuantes.
-- **Cor de Sucesso:** `#388E3C` _(Green darken-2)_
-  - _Uso:_ Extremamente restrito. Usado apenas em mensagens onde o _banco_ leva vantagem (ex: "Taxa cobrada com sucesso!").
+- **Cor Primária (Destaque / Ações Principais):** `#db4b1f` _(Terra cotta)_
+  - _Uso:_ Botões primários (ex: salvar, confirmar ações),a elementos de destaque e CTAs, ícones principais. Representa força, identidade e conexão com a terra.
+- **Cor Secundária (Base / Estrutura):** `#B55F46` _(Burnt Terracotta)_
+  - _Uso:_ Barra de navegação (Navbar), rodapé e textos de alto destaque. Transmite estabilidade, elegância e seriedade.
+- **Cor de Fundo (Background):** `#fbf9f8` _(Soft Sand White)_
+  - _Uso:_ Fundo principal da aplicação, base para construção da hierarquia visual. Um tom claro e quente que evita o branco puro.
