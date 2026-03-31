@@ -8,8 +8,8 @@ Em andamento.
 
 ## 🎨 Design
 
-- [Protótipo no Stitch](https://stitch.withgoogle.com/preview/911675141265227790?node-id=680d429cddd54cc1917bd823b1960d1b) - Telas interativas da aplicação.
-- [Design System](./docs/design-system.md) - Identidade Visual.
+- [🖼️Protótipo no Stitch](https://stitch.withgoogle.com/preview/911675141265227790?node-id=680d429cddd54cc1917bd823b1960d1b) - Telas interativas da aplicação.
+- [🎨Design System](./docs/design-system.md) - Identidade Visual.
 
 ## 🌐 Site em Produção - GitHub Pages
 
