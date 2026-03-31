@@ -21,7 +21,8 @@ Em andamento.
 ## 💻 Tecnologias e Dependências
 
 - **Framework CSS:** Bootstrap
-- **GiroRuralAPI:**
+- **GiroRuralAPI**  
+  API responsável por fornecer dados relacionados ao agronegócio, como informações de propriedades, animais e indicadores de mercado.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
