@@ -20,7 +20,7 @@ Em andamento.
 
 ## 💻 Tecnologias e Dependências
 
-- **Framework CSS:** Bootstrap
+- **Framework CSS - Bootstrap:** O Bootstrap foi escolhido por oferecer responsividade nativa, componentes prontos, suporte a interações com JavaScript, além de ser um framework estável, atualizado e com licença livre.
 - **GiroRuralAPI:**  API responsável por fornecer dados relacionados ao agronegócio, como informações de propriedades, animais e indicadores de mercado.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
