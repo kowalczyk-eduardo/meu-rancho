@@ -69,4 +69,8 @@ Em andamento.
 
 ## 📱 Telas da aplicação
 
-Em andamento.
+![image](<img width="640" height="443" alt="image" src="https://github.com/user-attachments/assets/c617f772-aa15-4c2a-9820-94119aa966b5" />
+)
+![image]()
+![image]()
+![image]()
