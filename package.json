@@ -1,0 +1,31 @@
+{
+  "name": "meu-rancho",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de um projeto para facilitar o gerenciamento de animais em uma propriedade rural. Inclui funcionalidades de cadastro pessoal, de propriedades e animais. ## 📚 Documentação do Projeto",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kowalczyk-eduardo/meu-rancho.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kowalczyk-eduardo/meu-rancho/issues"
+  },
+  "homepage": "https://github.com/kowalczyk-eduardo/meu-rancho#readme",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
