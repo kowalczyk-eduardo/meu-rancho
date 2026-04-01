@@ -11,9 +11,15 @@ Neste projeto, utilizamos um framework UI e aplicamos customizações pontuais p
 
 As variáveis de cor do sistema foram definidas para transmitir confiabilidade, solidez e sofisticação rural, alinhadas ao conceito "Modern Agrarian", utilizando tons terrosos e naturais.
 
-- **Cor Primária (Destaque / Ações Principais):** `#db4b1f` _(Terra cotta)_
-  - _Uso:_ Botões primários (ex: salvar, confirmar ações),a elementos de destaque e CTAs, ícones principais. Representa força, identidade e conexão com a terra.
-- **Cor Secundária (Base / Estrutura):** `#B55F46` _(Burnt Terracotta)_
-  - _Uso:_ Barra de navegação (Navbar), rodapé e textos de alto destaque. Transmite estabilidade, elegância e seriedade.
-- **Cor de Fundo (Background):** `#fbf9f8` _(Soft Sand White)_
-  - _Uso:_ Fundo principal da aplicação, base para construção da hierarquia visual. Um tom claro e quente que evita o branco puro.
+- **Cor Primária (Botões, links primários, CTAs):** `#C05A3B` _(Terracota)_
+  - _Uso:_ Botões primários (ex: salvar, confirmar ações),a elementos de destaque e CTAs, ícones principais.
+- **Cor da Superfície(Base / Estrutura):** `#FFFFFF` _(Branco)_
+  - _Uso:_ Cartões, modais, menus suspensos.
+- **Cor de Fundo (Fundo da página):** `#F9F6F0` _(Creme)_
+  - _Uso:_ Fundo principal da aplicação, base para construção da hierarquia visual.
+  - **Cor de texto:** `#3E2723` _(Café escuro)_
+  - _Uso:_ Títulos, texto do corpo.
+  - **Suave:** `#8D6E63` _(Taupe Quente)_
+  - _Uso:_ Texto secundário, bordas, espaços reservados.
+  - **Destaque:** `#4A7337` _(Verde Folha)_
+  - _Uso: Sucesso, estados ativos, destaques._
