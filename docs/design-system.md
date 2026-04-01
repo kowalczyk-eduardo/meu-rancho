@@ -19,7 +19,7 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
   - _Uso:_ Fundo principal da aplicação, base para construção da hierarquia visual.
 - **Cor de texto:** `#3E2723` _(Café escuro)_
   - _Uso:_ Títulos, texto do corpo.
-- **Suave:** `#8D6E63` _(Taupe Quente)_
+- **Cor Neutra:** `#8D6E63` _(Taupe Quente)_
   - _Uso:_ Texto secundário, bordas, espaços reservados.
 - **Destaque:** `#4A7337` _(Verde Folha)_
   - _Uso: Sucesso, estados ativos, destaques._
