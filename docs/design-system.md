@@ -23,3 +23,26 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
   - _Uso:_ Texto secundário, bordas, espaços reservados.
 - **Cor de Destaque:** `#4A7337` _(Verde Folha)_
   - _Uso: Sucesso, estados ativos, destaques._
+
+## 3. Tipografia
+
+- **Títulos:** `Playfair Display, serif` (Peso: 700).
+- **Corpo:** `Work Sans, sans-serif` (Peso: 400).
+- **Texto pequeno:** `Work Sans, sans-serif` (Peso: 400).
+- **Botões:** `Work Sans, sans-serif` (Peso: 500).
+
+## 4. Design Tokens
+
+:root {
+  --color-primary: #C05A3B;
+  --color-background: #F9F6F0;
+  --color-surface: #FFFFFF;
+  --color-text: #3E2723;
+  --color-muted: #8D6E63;
+  --color-accent: #4A7337;
+  --font-headings: 'Playfair Display', serif;
+  --font-body: 'Work Sans', sans-serif;
+  --radius-card: 12px;
+  --radius-btn: 8px;
+  --shadow-warm: 0 4px 12px rgba(62, 39, 35, 0.08);
+}
