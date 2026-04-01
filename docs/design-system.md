@@ -35,7 +35,9 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
 
 :root {
   -color-primary: #C05A3B;
+  
   -color-background: #F9F6F0;
+  
   -color-surface: #FFFFFF;
   -color-text: #3E2723;
   -color-muted: #8D6E63;
