@@ -52,5 +52,5 @@ Breve explicação das tabelas principais:
 
 ## 3. Versões das Tecnologias
 
-- **Bootstrap:** v5.3
+- **Bootstrap:** v5.3.8
 - **GiroRuralAPI:** v1
