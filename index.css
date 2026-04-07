@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    background-color: rgb(168, 100, 11);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Work Sans", sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #F9F6F0;
+    width: 95.2%;
+    height: 4.7rem;
+}
+
+#logo h2{
+    font-weight: 700;
+    color: #9A3412;
+}
+
+#login {
+    font-weight: 700;
+    width: 8vw;
+    height: 7vh;
+    border: transparent;
+    border-radius: 10%;
+    background-color: #DB4B1F;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#foto {
+    width: 100%;
+    height: 100vh;
+}
+#foto img {
+    width: 100%;
+    height: 100%;
+}
+
+#container h1 {
+    position: absolute;
+    color: white;
+    top: 50vh;
+    left: 2vw;
+    font-size: 48px;
+    font-weight: 800;
+}

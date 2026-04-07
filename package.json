@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/kowalczyk-eduardo/meu-rancho#readme",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "jquery": "^4.0.0",
+    "sass": "^1.99.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
