@@ -15,20 +15,24 @@ Diante desse cenário, o projeto tem como objetivo facilitar o cotidiano do prod
 
 Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, que deseja organizar a sua propriedade rural.
 
-### 👨‍🌾 Épico 1: Cadastro
+### 👀 Épico 1: Visitante
+
+- **US01 - Apresentação do site:** Como um visitante, quero visualizar de forma clara os principais benefícios e diferenciais do site, para decidir rapidamente se ele atende às minhas necessidades.
+
+### 👨‍🌾 Épico 2: Cadastro
 
 - **US01 - Cadastro do visitante:** Como um Visitante, quero preencher um formulário (Nome, E-mail e Senha) para criar uma conta no Meu Rancho.
   - _Critérios de Aceitação:_ O nome deve ser válido (Não conter números, símbolos, etc); todos os campos são obrigatórios.
 - **US02 - Login:** Como um usuário, quero inserir meu e-mail e/ou nome e senha para acessar a página inicial.
 
-### 🌳  Épico 2: Propriedades
+### 🌳  Épico 3: Propriedades
 
 - **US03 - Cadastro de propriedades:** Como um Usuário, quero quero poder adicionar minhas propriedades.
 - **US04 - Listagem de propriedades:** Como um Usuário, quero que seja possível visualizar todas as minhas propriedades adicionadas.
 - **US05 - Busca de propriedades:** Como um Usuário, quero informar um nome de busca, para localizar uma propriedade cadastrada em específico.
   - _Critérios de Aceitação:_ Não deve haver caracteres especiais; deve funcionar mesmo com o nome parcialmente escrito.
 
-### 🐄 Épico 3: Animais
+### 🐄 Épico 4: Animais
 
 - **US06 - Cadastro de animais:** Como um Usuário, quero cadastrar meus animais.
   - _Critérios de Aceitação:_ Deve haver um brinco numerado, para a realizar o cadastro do animal com sucesso.
