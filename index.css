@@ -1,6 +1,6 @@
 body {
     display: flex;
-    background-color: rgb(168, 100, 11);
+    background-color: rgb(0, 0, 0);
     margin: 0;
 }
 
@@ -15,9 +15,10 @@ header {
     font-family: "Work Sans", sans-serif;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #F9F6F0;
+    background-color: white;
     width: 95.2%;
     height: 4.7rem;
+    z-index: 1;
 }
 
 #logo h2{
@@ -31,9 +32,18 @@ header {
     height: 7vh;
     border: transparent;
     border-radius: 10%;
+    
     background-color: #DB4B1F;
     color: white;
 }
+
+@media (max-width: 768px) {
+  #login {
+    margin-right: 40px;
+    width: 20vw;
+  }
+}
+
 
 #container {
     width: 100%;
@@ -49,11 +59,32 @@ header {
     height: 100%;
 }
 
+.imgfoto {
+    opacity: 70%;
+}
+
 #container h1 {
     position: absolute;
     color: white;
     top: 50vh;
     left: 2vw;
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #container h1 {
+    font-size: 2rem;
+    left: 4vw;
+  }
+}
+
+#container h6 {
+    position: absolute;
+    top: 45vh;
+    left: 2.5vw;
+    padding: 0.3rem;
+    color: white;
+    background-color: rgba(36, 78, 8, 0.5);
+    border-radius: 16px;
 }
