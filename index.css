@@ -4,6 +4,7 @@ body {
     margin: 0;
 }
 
+/* Inicio header */
 header {
     display: flex;
     flex-direction: row;
@@ -21,9 +22,25 @@ header {
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+  header {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 3rem;
+  }
+}
+
 #logo h2{
     font-weight: 700;
     color: #9A3412;
+}
+
+@media (max-width: 768px) {
+  #logo h2 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: -7vw;
+  }
 }
 
 #login {
@@ -31,8 +48,7 @@ header {
     width: 8vw;
     height: 7vh;
     border: transparent;
-    border-radius: 10%;
-    
+    border-radius: 10px;
     background-color: #DB4B1F;
     color: white;
 }
@@ -40,11 +56,14 @@ header {
 @media (max-width: 768px) {
   #login {
     margin-right: 40px;
-    width: 20vw;
+    width: 30vw;
+    height: 6vh;
   }
 }
+/* Fim Header */
 
-
+/* Inicio container */
+/* Inicio foto */
 #container {
     width: 100%;
     height: 100%;
@@ -54,6 +73,7 @@ header {
     width: 100%;
     height: 100vh;
 }
+
 #foto img {
     width: 100%;
     height: 100%;
@@ -65,26 +85,100 @@ header {
 
 #container h1 {
     position: absolute;
+    font-family: "Plus Jakarta Sans", sans-serif;
     color: white;
-    top: 50vh;
-    left: 2vw;
-    font-size: 3rem;
-    font-weight: 700;
+    top: 31vh;
+    left: 4vw;
+    font-size: 4rem;
+    font-weight: 800;
+    max-width: 600px;
 }
 
 @media (max-width: 768px) {
   #container h1 {
     font-size: 2rem;
     left: 4vw;
+    max-width: 200px;
   }
 }
 
 #container h6 {
     position: absolute;
-    top: 45vh;
-    left: 2.5vw;
-    padding: 0.3rem;
+    top: 26vh;
+    left: 4.5vw;
+    padding: 8px 16px;
     color: white;
     background-color: rgba(36, 78, 8, 0.5);
     border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  #container h6 {
+    top: 27vh;
+    font-size: 0.45rem;
+    padding: 3.5px 12px;
+  }
+}
+/* Fim foto */
+
+/* Inicio apresentação */
+/* Inicio pergunta */
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F9F6F0;
+    padding-top: 5rem;
+}
+
+#pergunta {
+    padding-bottom: 5rem;
+}
+
+#pergunta h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #1B110E;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+#pergunta p {
+    font-family: "Work sans", sans-serif;
+    color: #5A413A;
+    text-align: center;
+    max-width: 600px;
+}
+/* Fim pergunta */
+
+/* Inicio propriedades */
+#propriedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    height: 30rem;
+    background-color: #FFFFFF;
+}
+
+#gestao {
+    flex: 1;
+    width: 47.5%;
+}
+
+#propriedades h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#propriedades p {
+    font-family: "Work sans", sans-serif;
+    max-width: 500px;
+}
+
+#propriedades img {
+    flex: 1;
+    max-width: 570px;
+    max-height: 320.63px;
+    border-radius: 10px;
 }
