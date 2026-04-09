@@ -1,15 +1,21 @@
 body {
     display: flex;
-    background-color: rgb(0, 0, 0);
     margin: 0;
+}
+
+@media (max-width: 768px) {
+  #body {
+    justify-content: center;
+  }
 }
 
 p {
     font-family: "Work Sans", sans-serif;
+    color: #5A413A;
 }
 
 /* Inicio header */
-header {
+ header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,7 +29,7 @@ header {
     background-color: white;
     width: 95.2%;
     height: 4.7rem;
-    z-index: 1;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -83,10 +89,6 @@ header {
     height: 100%;
 }
 
-.imgfoto {
-    opacity: 70%;
-}
-
 #container h1 {
     position: absolute;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -133,8 +135,9 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #F9F6F0;
+    background-color: #f7f3f1;
     padding-top: 5rem;
+    padding-bottom: 6rem;
     gap: 2.5rem;
 }
 
@@ -158,7 +161,6 @@ header {
 
 #pergunta p {
     font-family: "Work sans", sans-serif;
-    color: #5A413A;
     text-align: center;
     max-width: 600px;
 }
@@ -393,3 +395,227 @@ header {
     transform: scale(1.1);
 }
 /* Fim controle */
+/* FIm apresentacao */
+
+/* Inicio filosofia */
+#filosofia {
+    background-color: #F3EAE8;
+    width: 100%;
+    padding: 6rem 0;
+}
+
+
+#cardfilosofia {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.5rem;
+    margin: 0 1.2rem;
+    gap: 60px;
+}
+
+@media (max-width: 768px) {
+  #cardfilosofia {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+
+#fototablet {
+    flex: 1;
+    position: relative;
+    max-width: 584px;
+    height: 438px;
+}
+
+
+#fototablet img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+#quadrado {
+    position: absolute;
+    width: 12.5rem;
+    height: 8.12rem;
+    border-radius: 10px;
+    top: 20.3rem;
+    right: 25rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+  #quadrado {
+    width: 9.5rem;
+    top: 4.5rem;
+    right: 3rem;
+  }
+}
+
+#design {
+    flex: 1;
+}
+
+#design #p1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 550;
+    letter-spacing: 2px;
+    color: #956050;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #design #p1 {
+    font-size: 0.79rem;
+  }
+}
+
+
+#design h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    color: #1B110E;
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  #design h2 {
+    font-size: 2rem;
+  }
+}
+
+#design p {
+    line-height: 1.8;
+    max-width: 575px;
+    font-size: 1.1rem;
+}
+
+.fa-check {
+    font-size: 0.9rem;
+    color: #059669;
+    background-color: rgb(5, 150, 105, 0.15);
+    padding: 0.5rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+#design2 h4{
+    font-family: "Work Sans", sans-serif;
+    color: #1B110E;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #design2 h4 {
+    font-size: 0.8rem;
+  }
+}
+
+#design2 p {
+    max-width: 550px;
+    margin-top: 0;
+    font-size: 0.87rem;
+    margin-left: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  #design2 p {
+    font-size: 0.7rem;
+  }
+}
+
+#criarconta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #f7f3f1;
+    padding: 6rem 0;
+}
+
+#laranjao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9A3412;
+    border-radius: 20px;
+    width: 80%;
+}
+
+#laranjao h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 2;
+}
+
+@media (max-width: 768px) {
+  #laranjao h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+#laranjao p {
+    font-family: "Work Sans", sans-serif;
+    color: #FFEDD5;
+    margin-top: 0;
+    font-size: 1.1rem;
+    max-width: 600px;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  #laranjao p {
+    font-size: 0.8rem;
+  }
+}
+
+#laranjao button {
+    font-family: "Work Sans", sans-serif;
+    color: #7C2D12;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.25rem 2.5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    border: transparent;
+}
+
+@media (max-width: 768px) {
+  #laranjao button {
+    padding: 1rem 0.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+#autenticidade {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f3f1;
+    padding: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#autenticidade p {
+    font-family: "Work Sans", sans-serif;
+    color: #78716C;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  #autenticidade p {
+    text-align: center;
+    max-width: 200px;
+  }
+}
