@@ -50,27 +50,18 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
 ## 4. Design Tokens
 
 :root {
-
-  -color-primary: #C05A3B;
-  
-  -color-background: #F9F6F0;
-  
-  -color-surface: #FFFFFF;
-  
-  -color-text: #3E2723;
-  
-  -color-muted: #8D6E63;
-  
-  -color-accent: #4A7337;
-  
-  -font-headings: 'Playfair Display', serif;
-  
-  -font-body: 'Work Sans', sans-serif;
-  
-  -radius-card: 12px;
-  
-  -radius-btn: 8px;
-  
-  -shadow-warm: 0 4px 12px rgba(62, 39, 35, 0.08);
-  
+  --color-primary:      #DB4B1F;  
+  --color-primary-dark: #9A3412;   
+  --color-primary-deep: #7C2D12;  
+  --color-surface:      #FFFFFF;  
+  --color-background:   #F7F3F1;  
+  --color-background-alt: #F3EAE8; 
+  --color-text:         #1B110E;  
+  --color-text-body:    #5A413A;  
+  --color-muted:        #78716C;  
+  --color-accent:       #956050;  
+  --color-text-light:   #FFEDD5;  
+  --color-success:      #059669;  
+  -font-headings: 'Plus Jakarta Sans', sans-serif;
+  -font-body: 'Work Sans', sans-serif;  
 }
