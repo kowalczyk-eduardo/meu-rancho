@@ -63,7 +63,6 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
   --color-accent:       #956050;  
   --color-text-light:   #FFEDD5;  
   --color-success:      #059669;  
-  -font-headings: 'Plus Jakarta Sans', sans-serif;
-  
+  -font-headings: 'Plus Jakarta Sans', sans-serif; 
   -font-body: 'Work Sans', sans-serif;  
 }
