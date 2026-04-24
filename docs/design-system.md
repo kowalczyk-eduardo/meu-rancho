@@ -56,8 +56,7 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
   --color-primary-deep: #7C2D12;  
   --color-surface:      #FFFFFF;  
   --color-background:   #F7F3F1;  
-  --color-background-alt: #F3EAE8; 
-  
+  --color-background-alt: #F3EAE8;   
   --color-text:         #1B110E;  
   --color-text-body:    #5A413A;  
   --color-muted:        #78716C;  
