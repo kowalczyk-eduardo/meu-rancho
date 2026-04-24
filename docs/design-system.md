@@ -10,19 +10,31 @@ Neste projeto, utilizamos um framework UI e aplicamos customizações pontuais p
 ### 2. Paleta de Cores (Customização)
 
 As variáveis de cor do sistema foram definidas para transmitir confiabilidade, solidez e sofisticação rural, alinhadas ao conceito "Modern Agrarian", utilizando tons terrosos e naturais.
-
-- **Cor Primária (Botões, links primários, CTAs):** `#C05A3B` _(Terracota)_
-  - _Uso:_ Botões primários (ex: salvar, confirmar ações),a elementos de destaque e CTAs, ícones principais.
-- **Cor da Superfície(Base / Estrutura):** `#FFFFFF` _(Branco)_
-  - _Uso:_ Cartões, modais, menus suspensos.
-- **Cor de Fundo (Fundo da página):** `#F9F6F0` _(Creme)_
-  - _Uso:_ Fundo principal da aplicação, base para construção da hierarquia visual.
-- **Cor de texto:** `#3E2723` _(Café escuro)_
-  - _Uso:_ Títulos, texto do corpo.
-- **Cor Neutra:** `#8D6E63` _(Taupe Quente)_
-  - _Uso:_ Texto secundário, bordas, espaços reservados.
-- **Cor de Destaque:** `#4A7337` _(Verde Folha)_
-  - _Uso: Sucesso, estados ativos, destaques._
+ 
+- **Cor Primária (Botões, links primários, CTAs):** `#DB4B1F` _(Terracota Vivo)_
+  - _Uso:_ Botões primários (ex: salvar, confirmar ações), elementos de destaque, CTAs e ícones principais.
+- **Cor Escura da Marca (Fundos de seção de destaque):** `#9A3412` (Terracota Escuro)
+  - _Uso:_ Seções de chamada para ação (ex: faixa "Criar Conta"), fundo de blocos de alto contraste.
+- **Cor Profunda da Marca (Texto sobre fundo primário):** `#7C2D12` _(Marrom Avermelhado)_
+  - _Uso:_ Texto de botões sobre fundos brancos, reforço de hierarquia em componentes de CTA.
+- **Cor de Superfície (Base / Estrutura):** `#FFFFFF` _(Branco)_
+  - _Uso:_ Cartões, modais, menus suspensos e painéis internos.
+- **Cor de Fundo Principal (Fundo da página):** `#F7F3F1` _(Creme Claro)_
+  - _Uso:_ Fundo base da aplicação, suporte à hierarquia visual entre seções.
+- **Cor de Fundo Alternativo (Seções de destaque suave):** `#F3EAE8` _(Rosa Creme)_
+  - _Uso:_ Seções alternadas como "Filosofia", criando ritmo visual sem sobrecarga.
+- **Cor de Texto Principal (Títulos e headings):** `#1B110E` _(Café Muito Escuro)_
+  - _Uso:_ Headings h1, h2, h3 e qualquer texto de alta hierarquia.
+- **Cor de Texto do Corpo:** `#5A413A` _(Marrom Médio)_
+  - _Uso:_ Parágrafos, descrições e textos de apoio em geral.
+- **Cor Neutra / Muted:** `#78716C` _(Taupe Quente)_
+  - _Uso:_ Texto secundário, rodapés, placeholders e créditos.
+- **Cor de Destaque / Accent:** `#956050` _(Cobre Terroso)_
+  - _Uso:_ Labels de seção, badges, ícones de apoio e texto de navegação interna.
+- **Cor de Sucesso:** `#059669` _(Verde Esmeralda)_
+  - _Uso:_ Ícones de checklist, estados ativos, confirmações e indicadores positivos.
+- **Texto sobre Fundo Escuro:** `#FFEDD5` _(Creme Pálido)_
+  - _Uso:_ Parágrafos e descrições sobre fundos de cor primária escura (ex: seção CTA).
 
 ## 3. Tipografia
 
