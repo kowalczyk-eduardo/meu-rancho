@@ -50,6 +50,7 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
 ## 4. Design Tokens
 
 :root {
+
   --color-primary:      #DB4B1F;  
   --color-primary-dark: #9A3412;   
   --color-primary-deep: #7C2D12;  
