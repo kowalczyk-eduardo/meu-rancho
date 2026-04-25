@@ -38,4 +38,3 @@ Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, 
   - _Critérios de Aceitação:_ Deve haver um brinco numerado, para a realizar o cadastro do animal com sucesso.
 - **US07 - Seleção de características dos animais:** Como um Usuário, quero poder selecionar a idade, raça (opcional), e gênero do animal.
   - _Critérios de Aceitação:_ Deve haver uma lista para cada um dos itens.
-- **US08 - Cadastro de vacinas:** Como Usuário, quero poder associar vacinas para um animal ou mais.
