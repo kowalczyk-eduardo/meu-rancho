@@ -31,7 +31,6 @@ erDiagram
         string brinco "Identificação individual do animal"
         number idade "Idade aproximada do animal (em meses)"
         string genero "Macho ou fêmea"
-        string vacinas "Lista de vacinas aplicadas"
     }
 ```
 ## 2. Dicionário de Dados
