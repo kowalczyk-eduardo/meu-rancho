@@ -25,7 +25,7 @@ header {
   left: 0;
   font-family: "Work Sans", sans-serif;
   background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(0.5rem);
   width: 100%;
   height: 4.7rem;
   z-index: 2;
@@ -33,8 +33,8 @@ header {
 
 @media (max-width: 768px) {
   header {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
   }
 }
 
@@ -65,7 +65,7 @@ header {
   background-color: #db4b1f;
   color: #ffffff;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: 0.62rem 1.5rem;
   transition: all 0.2s ease;
 }
@@ -95,7 +95,7 @@ header {
 #foto {
   width: 100%;
   height: 100vh;
-  background-image: url(imagens/campo.avif);
+  background-image: url(assets/img/campo.avif);
   background-size: cover;
 }
 
@@ -112,14 +112,14 @@ header {
   left: 4vw;
   font-size: 4rem;
   font-weight: 800;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 @media (max-width: 768px) {
   #container h1 {
     font-size: 2rem;
     left: 4vw;
-    max-width: 200px;
+    max-width: 12.5rem;
   }
 }
 
@@ -127,17 +127,17 @@ header {
   position: absolute;
   top: 26vh;
   left: 4.5vw;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   color: white;
   background-color: rgba(36, 78, 8, 0.5);
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 @media (max-width: 768px) {
   #container h6 {
     top: 27vh;
     font-size: 0.45rem;
-    padding: 3.5px 12px;
+    padding: 0.2188rem 0.75rem;
   }
 }
 /* Fim foto */
@@ -177,7 +177,7 @@ header {
 #pergunta p {
   font-family: "Work sans", sans-serif;
   text-align: center;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 /* Fim pergunta */
 
@@ -185,11 +185,11 @@ header {
 #propriedades {
   display: flex;
   width: 94%;
-  border: 1px;
-  border-radius: 10px;
+  border: 0.0625rem;
+  border-radius: 0.625rem;
   padding: 3rem 0;
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 #gestao {
@@ -209,7 +209,7 @@ header {
 
 #texto {
   flex: 1;
-  max-width: 500px;
+  max-width: 31.25rem;
   padding: 0 3rem;
 }
 
@@ -239,14 +239,14 @@ header {
 .fotocampo {
   width: 95%;
   height: 50vh;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .fa-map {
   color: #db4b1f;
   background-color: rgba(219, 75, 31, 0.1);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-size: 1.5rem;
 }
 
@@ -262,11 +262,11 @@ header {
   display: flex;
   flex-direction: row;
   width: 94%;
-  border: 1px;
-  border-radius: 10px;
+  border: 0.0625rem;
+  border-radius: 0.625rem;
   padding: 3rem 0;
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 #rebanho {
@@ -291,7 +291,7 @@ header {
 
 #intro {
   flex: 1;
-  max-width: 400px;
+  max-width: 25rem;
   padding: 0 1.5rem;
 }
 
@@ -312,7 +312,7 @@ header {
   color: #956050;
   background-color: rgba(149, 96, 80, 0.1);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-size: 1.5rem;
 }
 
@@ -328,7 +328,7 @@ header {
   font-size: 0.75rem;
   line-height: 1rem;
   width: 4.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: 0.25rem 0.75rem;
   color: #956050;
   background-color: rgba(149, 96, 80, 0.15);
@@ -350,14 +350,14 @@ header {
 #imagens img {
   width: 14.8rem;
   height: 18.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   object-fit: cover;
 }
 
 #imagem1 {
   display: flex;
   position: relative;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
 }
 
@@ -367,7 +367,7 @@ header {
   font-weight: 600;
   font-size: 0.625rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   top: 16.3rem;
   left: 0.5rem;
 }
@@ -375,7 +375,7 @@ header {
 #imagem2 {
   display: flex;
   position: relative;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
 }
 
@@ -385,7 +385,7 @@ header {
   font-weight: 600;
   font-size: 0.625rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   top: 16.3rem;
   left: 0.5rem;
 }
@@ -393,7 +393,7 @@ header {
 #imagem3 {
   display: flex;
   position: relative;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
 }
 
@@ -403,7 +403,7 @@ header {
   font-weight: 600;
   font-size: 0.625rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   top: 16.3rem;
   left: 0.5rem;
 }
@@ -453,7 +453,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   z-index: 1;
 }
 
@@ -461,11 +461,11 @@ header {
   position: absolute;
   width: 12.5rem;
   height: 8.12rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   top: 20.3rem;
   right: 25rem;
   background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   z-index: 0;
 }
 
@@ -485,7 +485,7 @@ header {
   font-family: "Work Sans", sans-serif;
   font-size: 0.8rem;
   font-weight: 550;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   color: #956050;
   margin-bottom: 0;
 }
@@ -513,7 +513,7 @@ header {
 
 #design p {
   line-height: 1.8;
-  max-width: 575px;
+  max-width: 35.9375rem;
   font-size: 1.1rem;
 }
 
@@ -522,7 +522,7 @@ header {
   color: #059669;
   background-color: rgb(5, 150, 105, 0.15);
   padding: 0.5rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   margin-right: 1rem;
 }
 
@@ -540,7 +540,7 @@ header {
 }
 
 #design2 p {
-  max-width: 550px;
+  max-width: 34.375rem;
   margin-top: 0;
   font-size: 0.87rem;
   margin-left: 3.2rem;
@@ -567,7 +567,7 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: #9a3412;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   width: 80%;
 }
 
@@ -590,7 +590,7 @@ header {
   color: #ffedd5;
   margin-top: 0;
   font-size: 1.1rem;
-  max-width: 600px;
+  max-width: 37.5rem;
   text-align: center;
   padding-bottom: 2.5rem;
 }
@@ -609,7 +609,7 @@ header {
   font-weight: 700;
   padding: 1.25rem 2.5rem;
   margin-bottom: 5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   border: transparent;
   transition: all 0.2s ease;
 }
@@ -636,7 +636,7 @@ header {
   justify-content: center;
   background-color: #f7f3f1;
   padding: 2rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
 
 #autenticidade p {
