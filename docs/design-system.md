@@ -42,9 +42,9 @@ As variáveis de cor do sistema foram definidas para transmitir confiabilidade, 
   - _Uso:_ h1, h2, h3 — todos os títulos de seção e headline do hero.
 - **Corpo de Texto e Interface:** `Work Sans, sans-serif` _(Peso: 400)_
   - _Uso:_ Parágrafos, descrições, labels, menus e textos de apoio.
-- **Botões:** `Work Sans, sans-serif` _(Peso: 600 a 700)_
+- **Botões:** `Work Sans, sans-serif` _(Peso: 650)_
   - _Uso:_ Rótulos de botões primários e secundários.
-- **Labels e Badges:** `Work Sans, sans-serif` _(Peso: 550 a 600)_
+- **Labels e Badges:** `Work Sans, sans-serif` _(Peso: 550)_
   - _Uso:_ Tags, badges de status, labels de ícone e legendas.
 
 ## 4. Design Tokens
