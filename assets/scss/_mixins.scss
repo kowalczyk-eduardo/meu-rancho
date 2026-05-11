@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 @mixin titulo {
   font-family: $fonte-titulos;
   font-weight: $peso-titulo;

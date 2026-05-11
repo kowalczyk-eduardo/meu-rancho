@@ -54,12 +54,13 @@ label {
   }
 
   .input-group-text {
-    background-color: transparent;
+    background-color: $cor-fundo-principal;
     border: none;
   }
 
   .form-control {
     border: none;
+    background-color: $cor-fundo-principal;
 
     &:focus {
       box-shadow: none;

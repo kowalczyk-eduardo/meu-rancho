@@ -18,31 +18,44 @@
   </head>
   <body>
     <main class="min-vh-100 d-flex align-items-center">
-      <div class="d-flex flex-row align-items-center vh-100 w-100">
-        <div class="col-lg-6 d-none d-lg-block h-100">
+      <div
+        class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start vh-100 w-100"
+      >
+        <div class="col-lg-6 d-none d-lg-block h-100 p-0">
           <img
-            src="https://images.unsplash.com/photo-1691704951233-1954a27c8ce2?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://res.cloudinary.com/dzkkqkuav/image/upload/v1778531757/IMG_20250610_172549_n5hsod.jpg"
             class="w-100 h-100"
             alt=""
           />
         </div>
 
-        <div class="col-lg-6 d-flex flex-column align-items-center">
-          <h1>Meu Rancho</h1>
-          <h2>Comece sua jornada rural</h2>
-          <p>Crie sua conta para gerenciar suas propriedades.</p>
+        <div
+          class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center h-100"
+        >
+          <div class="text-center">
+            <h1>Meu Rancho</h1>
+            <h2>Comece sua jornada rural</h2>
+            <p>Crie sua conta para gerenciar suas propriedades.</p>
+          </div>
 
-          <div class="mb-3">
+          <div class="mb-3 col-8">
             <label class="form-label">Nome</label>
             <div class="input-group">
               <span class="input-group-text">
                 <i class="bi bi-person"></i>
               </span>
-              <input type="text" class="form-control" placeholder="Seu nome" />
+              <input
+                type="text"
+                class="form-control py-2"
+                placeholder="Seu nome"
+                required
+                minlength="3"
+                maxlength="50"
+              />
             </div>
           </div>
 
-          <div class="mb-3">
+          <div class="mb-3 col-8">
             <label class="form-label">E-mail</label>
             <div class="input-group">
               <span class="input-group-text">
@@ -50,29 +63,40 @@
               </span>
               <input
                 type="text"
-                class="form-control"
+                class="form-control py-2"
                 placeholder="seu@email.com"
+                required
+                type="email"
               />
             </div>
           </div>
 
-          <div class="mb-3">
-            <label class="form-label">Senha</label>
+          <div class="mb-3 col-8">
+            <label class="form-label"
+              >Senha <span class="text-danger">*</span></label
+            >
             <div class="input-group">
               <span class="input-group-text">
-                <i class="bi bi-unlock2"></i>
+                <i class="bi bi-lock"></i>
               </span>
               <input
-                type="text"
-                class="form-control"
+                type="password"
+                class="form-control py-2"
                 placeholder="Minimo 8 caracteres"
+                required
+                minlength="8"
+                maxlength="14"
               />
             </div>
           </div>
 
-          <button type="button" class="btn btn-primary">CRIAR CONTA</button>
+          <button type="submit" class="btn btn-primary py-2 col-8">
+            CRIAR CONTA
+          </button>
 
-          <p class="">Já tem uma conta? <a href="">Fazer Login</a></p>
+          <div class="mt-3">
+            <p>Já tem uma conta? <a href="">Fazer Login</a></p>
+          </div>
         </div>
       </div>
     </main>

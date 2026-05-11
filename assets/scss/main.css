@@ -48,11 +48,12 @@ label {
   border-color: #db4b1f;
 }
 .input-group .input-group-text {
-  background-color: transparent;
+  background-color: #f7f3f1;
   border: none;
 }
 .input-group .form-control {
   border: none;
+  background-color: #f7f3f1;
 }
 .input-group .form-control:focus {
   box-shadow: none;

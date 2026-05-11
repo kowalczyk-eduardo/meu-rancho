@@ -48,18 +48,19 @@ label {
   border-color: #db4b1f;
 }
 .input-group .input-group-text {
-  background-color: transparent;
+  background-color: #f7f3f1;
   border: none;
 }
 .input-group .form-control {
   border: none;
+  background-color: #f7f3f1;
 }
 .input-group .form-control:focus {
   box-shadow: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f3eae8;
 }
 
 main h1 {
@@ -67,19 +68,13 @@ main h1 {
   font-size: 1.875rem;
 }
 main h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 650;
+  color: #1b110e;
   font-size: 1.25rem;
 }
 main p {
   color: #78716c;
-}
-main .mb-3 {
-  width: 27.5rem;
-}
-main .btn {
-  width: 27.5rem;
-}
-main .btn-primary {
-  margin-bottom: 1.5rem;
 }
 main a {
   color: #db4b1f;

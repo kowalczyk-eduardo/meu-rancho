@@ -1,7 +1,7 @@
 @use "../../assets/scss/globals" as *;
 
 body {
-  background-color: $cor-superficie;
+  background-color: $cor-fundo-alternativa;
 }
 
 main {
@@ -17,18 +17,6 @@ main {
 
   p {
     color: $cor-neutra;
-  }
-
-  .mb-3 {
-    width: 27.5rem;
-  }
-
-  .btn {
-    width: 27.5rem;
-  }
-
-  .btn-primary {
-    margin-bottom: 1.5rem;
   }
 
   a {
