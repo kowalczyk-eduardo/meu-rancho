@@ -1,0 +1,11 @@
+@mixin titulo {
+  font-family: $fonte-titulos;
+  font-weight: $peso-titulo;
+  color: $cor-texto-principal;
+}
+
+@mixin texto-corpo {
+  font-family: $fonte-texto;
+  font-weight: $peso-texto;
+  color: $cor-texto-corpo;
+}
