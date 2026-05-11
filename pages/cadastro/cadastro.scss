@@ -1,0 +1,37 @@
+@use "../../assets/scss/globals" as *;
+
+body {
+  background-color: $cor-superficie;
+}
+
+main {
+  h1 {
+    color: $cor-primaria;
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    @include titulo;
+    font-size: 1.25rem;
+  }
+
+  p {
+    color: $cor-neutra;
+  }
+
+  .mb-3 {
+    width: 27.5rem;
+  }
+
+  .btn {
+    width: 27.5rem;
+  }
+
+  .btn-primary {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: $cor-primaria;
+  }
+}
