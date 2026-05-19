@@ -65,7 +65,7 @@ body {
 
 main h1 {
   color: #db4b1f;
-  font-size: 1.875rem;
+  font-size: 2rem;
 }
 main h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -75,6 +75,7 @@ main h2 {
 }
 main p {
   color: #78716c;
+  font-size: 0.875rem;
 }
 main a {
   color: #db4b1f;

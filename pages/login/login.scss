@@ -1,0 +1,30 @@
+@use "../../assets/scss/globals" as *;
+
+body {
+  background-color: $cor-fundo-alternativa;
+}
+
+main {
+  h1 {
+    color: $cor-primaria;
+    font-size: $tamanho-titulo-principal;
+  }
+
+  h2 {
+    @include titulo;
+    font-size: $tamanho-titulo-secundario;
+  }
+
+  p {
+    color: $cor-neutra;
+    font-size: $tamanho-texto;
+  }
+
+  a {
+    color: $cor-primaria;
+  }
+}
+
+#lembrar input:checked {
+  accent-color: $cor-primaria;
+}

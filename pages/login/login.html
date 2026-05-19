@@ -23,7 +23,7 @@
       >
         <div class="col-lg-6 d-none d-lg-block h-100 p-0">
           <img
-            src="https://res.cloudinary.com/dzkkqkuav/image/upload/v1778531757/IMG_20250610_172549_n5hsod.jpg"
+            src="https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto/v1778531757/IMG_20241110_184047_HDR_2_bruvrc.jpg"
             class="w-100 h-100"
             alt=""
           />
@@ -33,60 +33,68 @@
           class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center h-100"
         >
           <div class="text-center">
-            <h1>Meu Rancho</h1>
-            <h2>Comece sua jornada rural</h2>
-            <p>Crie sua conta para gerenciar suas propriedades.</p>
+            <h1 class="mb-4">Meu Rancho</h1>
+            <h2>Bem-Vindo de volta!</h2>
+            <p>Acesse seu caderno digital de propriedades.</p>
           </div>
 
-          <div class="mb-3 col-8">
-            <label class="form-label">Nome</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="bi bi-person"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control py-2"
-                placeholder="Seu nome"
-              />
+          <form
+            action=""
+            method="post"
+            class="col-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="mb-3 col-8">
+              <label class="form-label">E-mail</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control py-2"
+                  placeholder="Seu e-mail"
+                  required
+                  type="email"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="mb-3 col-8">
-            <label class="form-label">E-mail</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="bi bi-envelope"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control py-2"
-                placeholder="seu@email.com"
-              />
+            <div class="mb-3 col-8">
+              <label class="form-label"
+                >Senha <span class="text-danger">*</span></label
+              >
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-lock"></i>
+                </span>
+                <input
+                  type="password"
+                  class="form-control py-2"
+                  placeholder="••••••••"
+                  required
+                  minlength="8"
+                  maxlength="14"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="mb-3 col-8">
-            <label class="form-label">Senha</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="bi bi-lock"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control py-2"
-                placeholder="Minimo 8 caracteres"
-              />
+            <div class="mt-3 mb-3 col-8 d-flex justify-content-between">
+              <label id="lembrar">
+                <input type="checkbox" name="" id="" />
+                Lembrar de mim
+              </label>
+              <a href="">Esqueceu sua senha?</a>
             </div>
-          </div>
 
-          <button type="button" class="btn btn-primary py-2 col-8">
-            CRIAR CONTA
-          </button>
+            <button type="submit" class="btn btn-primary py-2 col-8 mb-5">
+              ENTRAR
+            </button>
+          </form>
 
-          <div class="mt-3">
-            <p>Já tem uma conta? <a href="">Fazer Login</a></p>
-          </div>
+          <p>
+            Novo por aqui?
+            <a href="../cadastro/cadastro.html">Criar conta</a>
+          </p>
         </div>
       </div>
     </main>

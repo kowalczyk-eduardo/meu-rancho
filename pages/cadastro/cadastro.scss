@@ -7,16 +7,17 @@ body {
 main {
   h1 {
     color: $cor-primaria;
-    font-size: 1.875rem;
+    font-size: $tamanho-titulo-principal;
   }
 
   h2 {
     @include titulo;
-    font-size: 1.25rem;
+    font-size: $tamanho-titulo-secundario;
   }
 
   p {
     color: $cor-neutra;
+    font-size: $tamanho-texto;
   }
 
   a {
