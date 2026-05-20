@@ -4,6 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Propriedades</title>
+
+    <link
+      rel="stylesheet"
+      href="/../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="propriedades.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="d-flex mb-5">
+      <div class="col-12 d-flex justify-content-center">
+        <img src="../../assets/img/logo2.png" alt="" class="logo" />
+      </div>
+    </header>
+
+    <main
+      class="container col-12 col-md-10 col-lg-8 d-flex flex-column px-4 px-md-0 gap-4"
+    >
+      <div class="d-flex justify-content-between align-items-center mt-4">
+        <div>
+          <h2 class="">Propriedades</h2>
+        </div>
+
+        <div>
+          <button class="btn btn-primary d-none d-md-block">
+            <i class="bi bi-plus-lg"></i> Nova Propriedade
+          </button>
+
+          <button class="btn btn-primary d-block d-md-none botao-flutuante">
+            <i class="bi bi-plus-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping"
+            ><i class="bi bi-search"></i
+          ></span>
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Buscar propriedades..."
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="card h-100 rounded-5">
+              <img
+                src="https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531758/IMG_20250610_172801_kaiwk5.jpg"
+                class="card-img-top rounded-top-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3>Fazenda Rio Bonito</h3>
+                <p><i class="bi bi-geo-alt"></i> Goioxim, Paraná</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="card h-100 rounded-5">
+              <img
+                src="https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531756/IMG_20260421_163200_czivg4.jpg"
+                class="card-img-top rounded-top-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3>Fazenda Xaxim Velho</h3>
+                <p><i class="bi bi-geo-alt"></i> Guará, Paraná</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="card h-100 rounded-5">
+              <img
+                src="https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531758/IMG_20250618_175025_e0y77l.jpg"
+                class="card-img-top rounded-top-5"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3>Sitio Alvorada</h3>
+                <p><i class="bi bi-geo-alt"></i> Alvorada, Paraná</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
 </html>
