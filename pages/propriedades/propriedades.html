@@ -15,9 +15,14 @@
       href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="propriedades.css" />
   </head>
-  <body>
+  <body class="container">
     <header class="d-flex mb-5">
       <div class="col-12 d-flex justify-content-center">
         <img src="../../assets/img/logo2.png" alt="" class="logo" />
@@ -25,7 +30,7 @@
     </header>
 
     <main
-      class="container col-12 col-md-10 col-lg-8 d-flex flex-column px-4 px-md-0 gap-4"
+      class="container col-12 col-lg-10 d-flex flex-column px-4 px-md-0 gap-4 vh-100"
     >
       <div class="d-flex justify-content-between align-items-center mt-4">
         <div>
@@ -43,7 +48,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="mb-3">
         <div class="input-group flex-nowrap">
           <span class="input-group-text" id="addon-wrapping"
             ><i class="bi bi-search"></i
@@ -58,7 +63,7 @@
         </div>
       </div>
 
-      <div class="row g-4 mb-5">
+      <div class="row g-4 mb-5 cards">
         <div class="col-12 col-md-6 col-lg-4">
           <a href="">
             <div class="card h-100 rounded-5">
@@ -68,7 +73,16 @@
                 alt="..."
               />
               <div class="card-body">
-                <h3>Fazenda Rio Bonito</h3>
+                <div
+                  class="d-flex align-items-center justify-content-between gap-2 mb-2"
+                >
+                  <h3 class="mb-0 text-truncate" title="Fazenda Rio Bonito">
+                    Fazenda Rio Bonito
+                  </h3>
+                  <span class="badge rounded-pill"
+                    ><i class="fa-solid fa-cow"></i> 74</span
+                  >
+                </div>
                 <p><i class="bi bi-geo-alt"></i> Goioxim, Paraná</p>
               </div>
             </div>
@@ -84,7 +98,16 @@
                 alt="..."
               />
               <div class="card-body">
-                <h3>Fazenda Xaxim Velho</h3>
+                <div
+                  class="d-flex align-items-center justify-content-between gap-2 mb-2"
+                >
+                  <h3 class="mb-0 text-truncate" title="Fazenda Xaxim Velho">
+                    Fazenda Xaxim Velho
+                  </h3>
+                  <span class="badge rounded-pill"
+                    ><i class="fa-solid fa-cow"></i> 130</span
+                  >
+                </div>
                 <p><i class="bi bi-geo-alt"></i> Guará, Paraná</p>
               </div>
             </div>
@@ -100,7 +123,19 @@
                 alt="..."
               />
               <div class="card-body">
-                <h3>Sitio Alvorada</h3>
+                <div
+                  class="d-flex align-items-center justify-content-between gap-2 mb-2"
+                >
+                  <h3
+                    class="mb-0 text-truncate"
+                    title="Sitio Alvoradaasdasdasdsadasdsa"
+                  >
+                    Sitio Alvorada
+                  </h3>
+                  <span class="badge rounded-pill"
+                    ><i class="fa-solid fa-cow"></i> 95</span
+                  >
+                </div>
                 <p><i class="bi bi-geo-alt"></i> Alvorada, Paraná</p>
               </div>
             </div>

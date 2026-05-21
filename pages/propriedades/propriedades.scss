@@ -6,14 +6,14 @@ body {
 
 
 header {
-    background-color: $cor-superficie;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    background-color: $cor-fundo-principal;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.07);
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 
 
 .logo {
-    max-width: 9.375rem;
+    max-width: 7rem;
     height: auto;
   }
  }
@@ -21,7 +21,6 @@ header {
  main {
     .input-group {
         border-radius: 2rem;
-        border: none;
         box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 
         input {
@@ -40,6 +39,33 @@ header {
         right: 1.5rem;
         border-radius: 2.5rem;
         z-index: 1000;
+    }
+
+    .cards {
+        .card {
+            &:hover {
+                box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+            }
+
+            img {
+                &:hover {
+                    filter: brightness(1.1);
+                    transition: filter 0.5s ease;
+                }
+            }
+        }
+
+        }
+    
+
+    .card-body {
+        .badge {
+            background-color: rgba($cor-sucesso, 0.1);
+            color: $cor-sucesso-escuro;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            border: .0625rem solid rgba($cor-sucesso-escuro, 0.2);
+        }
     }
  }
 }
