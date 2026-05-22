@@ -76,7 +76,12 @@
                 <div
                   class="d-flex align-items-center justify-content-between gap-2 mb-2"
                 >
-                  <h3 class="mb-0 text-truncate" title="Fazenda Rio Bonito">
+                  <h3
+                    class="mb-0 text-truncate"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Fazenda Rio Bonito"
+                  >
                     Fazenda Rio Bonito
                   </h3>
                   <span class="badge rounded-pill"
@@ -101,7 +106,12 @@
                 <div
                   class="d-flex align-items-center justify-content-between gap-2 mb-2"
                 >
-                  <h3 class="mb-0 text-truncate" title="Fazenda Xaxim Velho">
+                  <h3
+                    class="mb-0 text-truncate"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Fazenda Xaxim Velho"
+                  >
                     Fazenda Xaxim Velho
                   </h3>
                   <span class="badge rounded-pill"
@@ -128,7 +138,9 @@
                 >
                   <h3
                     class="mb-0 text-truncate"
-                    title="Sitio Alvoradaasdasdasdsadasdsa"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Sitio Alvorada"
                   >
                     Sitio Alvorada
                   </h3>
@@ -143,9 +155,16 @@
         </div>
       </div>
     </main>
-    <script
-      defer
-      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    ></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+
+      tooltipTriggerList.forEach((el) => {
+        new bootstrap.Tooltip(el);
+      });
+    </script>
   </body>
 </html>
