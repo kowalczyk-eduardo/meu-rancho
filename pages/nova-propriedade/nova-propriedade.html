@@ -4,6 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Propriedade</title>
+
+    <link
+      rel="stylesheet"
+      href="/../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="propriedades.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="vh-100">
+      <div
+        class="d-flex align-items-center justify-content-center row col-8 col-md-12 pt-4"
+      >
+        <div class="d-none d-md-block col-md-4">
+          <img
+            src="https://res.cloudinary.com/dzkkqkuav/image/upload/w_447,h_608,q_auto,f_auto/v1779593162/unnamed_zrnehj.png"
+            class="img-fluid rounded-start-4"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="d-flex flex-column col-12 col-md-4 align-items-center justify-content-center"
+        >
+          <h1>Meu Rancho</h1>
+          <h3>Nova Propriedade</h3>
+          <p>Preencha os dados básicos para começar.</p>
+
+          <form
+            action=""
+            method="get"
+            class="col-12 d-flex flex-column align-items-center"
+          >
+            <div class="mb-4 col-10">
+              <label class="form-label">Nome Da Propriedade</label>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Ex: Fazendo Xaxim Velho"
+                  required
+                  type="text"
+                />
+              </div>
+            </div>
+
+            <div class="row gx-3 justify-content-center mb-4">
+              <div class="col-12 col-md-5">
+                <label class="form-label">Cidade</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    placeholder="Ex: Guarapuava"
+                    required
+                    type="text"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5">
+                <label class="form-label">Estado</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    placeholder="Ex: PR"
+                    required
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <a href="../propriedades/propriedades.html">
+              <button type="submit" class="btn btn-primary">
+                Salvar Propriedade <i class="bi bi-arrow-right"></i>
+              </button>
+            </a>
+          </form>
+
+          <a href="../propriedades/propriedades.html">
+            <button class="btn btn-outline-primary">
+              <i class="bi bi-arrow-left"></i> Cancelar
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
