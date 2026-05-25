@@ -1,0 +1,120 @@
+h1,
+h2,
+h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1b110e;
+  font-weight: 650;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  color: #5a413a;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.2s ease;
+}
+.btn.btn-primary {
+  background-color: #db4b1f;
+  font-weight: 550;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-focus-box-shadow: none;
+  --bs-btn-box-shadow: none;
+}
+.btn.btn-primary:hover {
+  background-color: #9a3412;
+}
+.btn.btn-primary:active {
+  transform: scale(0.9);
+}
+
+label {
+  font-weight: 400;
+}
+
+.input-group {
+  border: 0.0938rem solid #ced4da;
+  border-radius: 0.375rem;
+}
+.input-group:focus-within {
+  border-color: #db4b1f;
+}
+.input-group .input-group-text {
+  background-color: #ffffff;
+  border: none;
+}
+.input-group .form-control {
+  border: none;
+  background-color: #ffffff;
+}
+.input-group .form-control:focus {
+  box-shadow: none;
+}
+
+body {
+  background-color: #f7f3f1;
+}
+body main .imagem h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 650;
+}
+body main .imagem p {
+  font-size: 0.875rem;
+  color: #ffedd5;
+  font-weight: 400;
+}
+body main .filtro {
+  background-color: rgba(49, 4, 45, 0.3);
+}
+body main .div-textos {
+  background-color: #ffffff;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+body main .div-textos .cabecalho h3 {
+  color: #db4b1f;
+  font-weight: 650;
+}
+body main .div-textos .cabecalho h1 {
+  font-size: 2rem;
+  color: #1b110e;
+  font-weight: 650;
+}
+body main .div-textos .cabecalho p {
+  color: #5a413a;
+  font-weight: 400;
+}
+body main .div-textos .input-group {
+  border-radius: 0.75rem !important;
+}
+body main .div-textos .input-group .form-control {
+  background-color: #f3eae8;
+  border-radius: 0.75rem !important;
+}
+body main .div-textos .input-group .form-control::-moz-placeholder {
+  font-family: "Work Sans", sans-serif;
+  color: rgba(90, 65, 58, 0.6);
+  font-weight: 400;
+}
+body main .div-textos .input-group .form-control::placeholder {
+  font-family: "Work Sans", sans-serif;
+  color: rgba(90, 65, 58, 0.6);
+  font-weight: 400;
+}
+body main .div-textos .input-group .botao-cancelar {
+  border: none;
+}
+body label {
+  font-family: "Work Sans", sans-serif;
+  color: #db4b1f;
+  font-size: 0.875rem;
+  font-weight: 550;
+}/*# sourceMappingURL=nova-propriedade.css.map */
