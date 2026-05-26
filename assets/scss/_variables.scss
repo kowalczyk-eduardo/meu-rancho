@@ -20,6 +20,6 @@ $peso-botao: 550;
 $peso-titulo: 650;
 $peso-texto: 400;
 
-$tamanho-titulo-principal: 2rem;
+$tamanho-titulo-principal: clamp(1.875rem, 1.6513rem + 0.994vw, 2.5rem);
 $tamanho-titulo-secundario: 1.25rem;
 $tamanho-texto: .875rem;

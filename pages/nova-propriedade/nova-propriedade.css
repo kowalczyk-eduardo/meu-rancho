@@ -63,7 +63,7 @@ body {
   background-color: #f7f3f1;
 }
 body main .imagem h1 {
-  font-size: 2rem;
+  font-size: clamp(1.875rem, 1.6513rem + 0.994vw, 2.5rem);
   color: #ffffff;
   font-weight: 650;
 }
@@ -79,12 +79,17 @@ body main .div-textos {
   background-color: #ffffff;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+  body main .div-textos {
+    border-radius: 1rem;
+  }
+}
 body main .div-textos .cabecalho h3 {
   color: #db4b1f;
   font-weight: 650;
 }
 body main .div-textos .cabecalho h1 {
-  font-size: 2rem;
+  font-size: clamp(1.875rem, 1.6513rem + 0.994vw, 2.5rem);
   color: #1b110e;
   font-weight: 650;
 }
@@ -109,12 +114,30 @@ body main .div-textos .input-group .form-control::placeholder {
   color: rgba(90, 65, 58, 0.6);
   font-weight: 400;
 }
-body main .div-textos .input-group .botao-cancelar {
-  border: none;
-}
-body label {
+body main label {
   font-family: "Work Sans", sans-serif;
   color: #db4b1f;
   font-size: 0.875rem;
   font-weight: 550;
+}
+body main .botao-salvar .seta1 {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+body main .botao-salvar:hover .seta1 {
+  transform: translateX(0.375rem);
+}
+body main .botao-cancelar {
+  color: #5a413a;
+  border: none;
+}
+body main .botao-cancelar:hover {
+  color: #db4b1f;
+}
+body main .botao-cancelar .seta2 {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+body main .botao-cancelar:hover .seta2 {
+  transform: translateX(-0.375rem);
 }/*# sourceMappingURL=nova-propriedade.css.map */

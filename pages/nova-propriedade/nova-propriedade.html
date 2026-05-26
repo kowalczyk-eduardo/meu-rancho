@@ -24,7 +24,9 @@
   </head>
   <body>
     <main class="d-flex align-items-center justify-content-center min-vh-100">
-      <div class="row g-0 col-10 align-items-stretch justify-content-center">
+      <div
+        class="row g-0 col-12 px-3 align-items-stretch justify-content-center"
+      >
         <div
           class="d-none d-md-block col-md-5 col-lg-4 px-0 position-relative imagem"
         >
@@ -48,11 +50,13 @@
         </div>
 
         <div
-          class="d-flex flex-column col-md-5 col-lg-4 px-0 align-items-center justify-content-center div-textos rounded-end-4 mx-5 my-5 mx-md-0 my-md-0"
+          class="d-flex flex-column col-md-5 col-lg-4 align-items-center justify-content-center div-textos rounded-end-4 my-5 my-md-0 py-5"
         >
           <div class="col-10">
             <div class="d-flex flex-column cabecalho mb-4">
-              <h3><i class="fa-solid fa-tractor"></i> Meu Rancho</h3>
+              <h3 class="mb-3">
+                <i class="fa-solid fa-tractor"></i> Meu Rancho
+              </h3>
               <h1>Nova Propriedade</h1>
               <p>Preencha os dados básicos para começar.</p>
             </div>
@@ -61,7 +65,7 @@
           <form
             action="../propriedades/propriedades.html"
             method="get"
-            class="d-flex flex-column w-100 align-items-center mb-3"
+            class="d-flex flex-column w-100 align-items-center mb-4"
           >
             <div class="mb-4 col-10">
               <label class="form-label">NOME DA PROPRIEDADE</label>
@@ -75,9 +79,9 @@
               </div>
             </div>
 
-            <div class="mb-4 col-10">
-              <div class="d-flex flex-column flex-md-row gx-3">
-                <div class="col-12 col-md6">
+            <div class="col-10 mb-5">
+              <div class="d-flex flex-column flex-md-row gap-4">
+                <div class="flex-fill">
                   <label class="form-label">CIDADE</label>
                   <div class="input-group">
                     <input
@@ -89,7 +93,7 @@
                   </div>
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="flex-fill">
                   <label class="form-label">ESTADO</label>
                   <div class="input-group">
                     <input
@@ -103,24 +107,22 @@
               </div>
             </div>
 
-            <div
-              class="col-10 col-md-10 d-flex align-items-center justify-content-center"
-            >
+            <div class="col-10 col-md-10 d-flex">
               <button
                 type="submit"
-                class="btn btn-primary w-100 py-3 rounded-3"
+                class="btn btn-primary w-100 py-3 rounded-3 botao-salvar"
               >
-                Salvar Propriedade <i class="bi bi-arrow-right"></i>
+                Salvar Propriedade <i class="bi bi-arrow-right seta1"></i>
               </button>
             </div>
           </form>
 
-          <div class="col-10 justify-content-center d-flex">
+          <div class="col-10 d-flex">
             <a
               href="../propriedades/propriedades.html"
               class="btn btn-outline-none w-100 border-0 botao-cancelar"
             >
-              <i class="bi bi-arrow-left"></i> Voltar a Propriedades
+              <i class="bi bi-arrow-left seta2"></i> Voltar a Propriedades
             </a>
           </div>
         </div>
