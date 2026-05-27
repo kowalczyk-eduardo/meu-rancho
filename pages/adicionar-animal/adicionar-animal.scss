@@ -1,0 +1,48 @@
+@use "../../assets/scss/globals" as *;
+
+body {
+    background-color: $cor-fundo-principal;
+
+    header {
+    background-color: $cor-fundo-principal;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.07);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+
+
+    .logo {
+        max-width: 7rem;
+        height: auto;
+    }
+ }
+
+    section {
+        .div-tamanho {
+            max-width: 42.125rem;
+        }
+
+        .imagem {
+
+            .boi-burro {
+                object-fit: cover
+            }
+
+            .titulo {
+                max-width: 80%;
+
+                h1 {
+                    color: $cor-superficie;
+                    font-weight: $peso-botao;
+                }
+
+                p {
+                    color: $cor-fundo-alternativa2;
+                }
+            }
+        }
+
+        form {
+            background-color: $cor-superficie;
+        }
+}  
+}

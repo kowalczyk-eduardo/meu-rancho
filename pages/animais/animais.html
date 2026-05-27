@@ -34,7 +34,7 @@
         <div class="">
           <a
             href="../propriedades/propriedades.html"
-            class="btn btn-outline-none ps-0 voltar"
+            class="btn btn-outline-none ps-0 border-0 voltar"
           >
             <i class="bi bi-arrow-left seta1"></i> Voltar a Propriedades
           </a>
@@ -74,6 +74,7 @@
                   <select
                     class="form-select rounded-5"
                     aria-label="Default select example"
+                    id="selectGenero"
                   >
                     <option selected>Gênero do Animal</option>
                     <option value="1">Macho</option>
@@ -92,14 +93,16 @@
                       placeholder="Buscar Animal (Brinco)"
                       aria-label="Username"
                       aria-describedby="addon-wrapping"
+                      id="pesquisarBrinco"
                     />
                   </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-3 mb-2">
                   <select
                     class="form-select rounded-5"
                     aria-label="Default select example"
+                    id="selectIdade"
                   >
                     <option selected>Idade do Animal</option>
                     <option value="1">0-12 Meses</option>
@@ -107,6 +110,68 @@
                     <option value="3">25-36 Meses</option>
                     <option value="4">+36 Meses</option>
                   </select>
+                </div>
+
+                <div class="col-6 me-4">
+                  <select
+                    class="form-select rounded-5"
+                    aria-label="Raça do Animal"
+                    id="selectRaca"
+                  >
+                    <option selected value="">Raça do Animal</option>
+
+                    <!-- Corte -->
+                    <optgroup label="Corte">
+                      <option value="nelore">Nelore</option>
+                      <option value="angus">Angus</option>
+                      <option value="brahman">Brahman</option>
+                      <option value="senepol">Senepol</option>
+                      <option value="hereford">Hereford</option>
+                      <option value="brangus">Brangus</option>
+                      <option value="simmental">Simmental</option>
+                      <option value="charolês">Charolês</option>
+                      <option value="limousin">Limousin</option>
+                    </optgroup>
+
+                    <!-- Leite -->
+                    <optgroup label="Leite">
+                      <option value="gir-leiteiro">Gir Leiteiro</option>
+                      <option value="girolando">Girolando</option>
+                      <option value="holandês">Holandês</option>
+                      <option value="jersey">Jersey</option>
+                      <option value="pardo-suíço">Pardo Suíço</option>
+                    </optgroup>
+
+                    <!-- Cruzamento -->
+                    <optgroup label="Cruzamento">
+                      <option value="canchim">Canchim</option>
+                      <option value="tabapuã">Tabapuã</option>
+                      <option value="indubrasil">Indubrasil</option>
+                      <option value="sindi">Sindi</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="row col-6">
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 text-nowrap"
+                      id="btnReset"
+                    >
+                      Resetar Filtros
+                    </button>
+                  </div>
+
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="btn btn-primary w-100 text-nowrap"
+                      id="btnSalvar"
+                    >
+                      Salvar Filtros
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,7 +223,48 @@
                     />
                   </div>
                 </div>
-                <div class="mb-3">
+
+                <div class="col-6 mb-3">
+                  <select
+                    class="form-select rounded-5"
+                    aria-label="Raça do Animal"
+                    id="selectRaca"
+                  >
+                    <option selected value="">Raça do Animal</option>
+
+                    <!-- Corte -->
+                    <optgroup label="Corte">
+                      <option value="nelore">Nelore</option>
+                      <option value="angus">Angus</option>
+                      <option value="brahman">Brahman</option>
+                      <option value="senepol">Senepol</option>
+                      <option value="hereford">Hereford</option>
+                      <option value="brangus">Brangus</option>
+                      <option value="simmental">Simmental</option>
+                      <option value="charolês">Charolês</option>
+                      <option value="limousin">Limousin</option>
+                    </optgroup>
+
+                    <!-- Leite -->
+                    <optgroup label="Leite">
+                      <option value="gir-leiteiro">Gir Leiteiro</option>
+                      <option value="girolando">Girolando</option>
+                      <option value="holandês">Holandês</option>
+                      <option value="jersey">Jersey</option>
+                      <option value="pardo-suíço">Pardo Suíço</option>
+                    </optgroup>
+
+                    <!-- Cruzamento -->
+                    <optgroup label="Cruzamento">
+                      <option value="canchim">Canchim</option>
+                      <option value="tabapuã">Tabapuã</option>
+                      <option value="indubrasil">Indubrasil</option>
+                      <option value="sindi">Sindi</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="mb-3 ms-1">
                   <p class="mb-0">Gênero</p>
 
                   <div class="form-check">
@@ -186,44 +292,63 @@
                   </div>
                 </div>
 
-                <div>
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-primary dropdown-toggle botao-drop"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Idade do Animal
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a
-                          class="dropdown-item py-1 px-4 border-bottom text-center"
-                          href="#"
-                          >0-12 Meses</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item py-1 border-bottom text-center"
-                          href="#"
-                          >13-24 Meses</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item py-1 border-bottom text-center"
-                          href="#"
-                          >25-36 Meses</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item py-1 text-center" href="#"
-                          >+36 Meses</a
-                        >
-                      </li>
-                    </ul>
+                <div class="col-4 mb-3 ms-1">
+                  <p class="mb-0">Idade do Animal</p>
+
+                  <div
+                    class="form-check border-bottom border-secondary pb-1 mb-1 rounded"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioDefault"
+                      id="radioDefault1"
+                    />
+                    <label class="form-check-label" for="radioDefault1">
+                      0-12 Meses
+                    </label>
+                  </div>
+
+                  <div
+                    class="form-check border-bottom border-secondary pb-1 mb-1 rounded"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioDefault"
+                      id="radioDefault1"
+                    />
+                    <label class="form-check-label" for="radioDefault1">
+                      13-24 Meses
+                    </label>
+                  </div>
+
+                  <div
+                    class="form-check border-bottom border-secondary pb-1 mb-1 rounded"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioDefault"
+                      id="radioDefault1"
+                    />
+                    <label class="form-check-label" for="radioDefault1">
+                      25-36 Meses
+                    </label>
+                  </div>
+
+                  <div
+                    class="form-check border-bottom border-secondary pb-1 mb-1 rounded"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioDefault"
+                      id="radioDefault1"
+                    />
+                    <label class="form-check-label" for="radioDefault1">
+                      +36 Meses
+                    </label>
                   </div>
                 </div>
               </div>

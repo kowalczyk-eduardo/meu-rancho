@@ -4,6 +4,7 @@ $cor-profunda-marca: #7c2d12; // Texto sobre fundo primário
 $cor-superficie: #ffffff; // Base / Estrutura
 $cor-fundo-principal: #f7f3f1; // Fundo da página
 $cor-fundo-alternativa: #f3eae8; // Seções de destaque suave
+$cor-fundo-alternativa2: #f3eae8b2;
 $cor-texto-principal: #1b110e; // Headings h1, h2, h3 e qualquer texto de alta hierarquia
 $cor-texto-corpo: #5a413a; //  Parágrafos, descrições e textos de apoio em geral
 $cor-neutra: #78716c; // Texto secundário, rodapés, placeholders e créditos.
@@ -16,8 +17,9 @@ $cor-filtro: rgba(49, 4, 45, 0.667);
 $fonte-titulos: "Plus Jakarta Sans", sans-serif;
 $fonte-texto: "Work Sans", sans-serif;
 
-$peso-botao: 550;
 $peso-titulo: 650;
+$peso-botao: 550;
+$peso-medio: 475;
 $peso-texto: 400;
 
 $tamanho-titulo-principal: clamp(1.875rem, 1.6513rem + 0.994vw, 2.5rem);

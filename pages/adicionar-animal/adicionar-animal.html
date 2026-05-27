@@ -4,6 +4,210 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adicionar Animal</title>
+
+    <link
+      rel="stylesheet"
+      href="/../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../adicionar-animal/adicionar-animal.css" />
   </head>
-  <body></body>
+  <body class="vh-100">
+    <header class="d-flex mb-5 align-items-center">
+      <div class="d-flex col-12 justify-content-center">
+        <img src="../../assets/img/logo2.png" alt="" class="logo" />
+      </div>
+    </header>
+    <main class="container">
+      <section
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="div-tamanho">
+          <div class="position-relative imagem">
+            <img
+              class="rounded-top-4 boi-burro w-100"
+              src="https://res.cloudinary.com/dzkkqkuav/image/upload/w_670,h_192,q_auto,f_auto/v1778531756/IMG_20260208_185633_tgokif.jpg"
+              alt=""
+            />
+
+            <div class="position-absolute bottom-0 start-0 w-100 ms-4 titulo">
+              <h1 class="mb-0">Novo Animal</h1>
+              <p class="mt-0">
+                Complete as informações para o registro do animal.
+              </p>
+            </div>
+          </div>
+
+          <form class="d-flex flex-column pt-4 m-0 px-3 rounded-bottom-4">
+            <div class="row g-2 pb-4">
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="" class="form-label"
+                    >NUMERO DE IDENTIFICAÇÃO (BRINCO)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="numeroBrinco"
+                    placeholder="Ex: #04"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="" class="form-label">Raça</label>
+
+                <select
+                  class="form-select"
+                  aria-label="Raça do Animal"
+                  id="selectRaca"
+                  required
+                >
+                  <option selected value="">Raça do Animal</option>
+
+                  <!-- Corte -->
+                  <optgroup label="Corte">
+                    <option value="nelore">Nelore</option>
+                    <option value="angus">Angus</option>
+                    <option value="brahman">Brahman</option>
+                    <option value="senepol">Senepol</option>
+                    <option value="hereford">Hereford</option>
+                    <option value="brangus">Brangus</option>
+                    <option value="simmental">Simmental</option>
+                    <option value="charolês">Charolês</option>
+                    <option value="limousin">Limousin</option>
+                  </optgroup>
+
+                  <!-- Leite -->
+                  <optgroup label="Leite">
+                    <option value="gir-leiteiro">Gir Leiteiro</option>
+                    <option value="girolando">Girolando</option>
+                    <option value="holandês">Holandês</option>
+                    <option value="jersey">Jersey</option>
+                    <option value="pardo-suíço">Pardo Suíço</option>
+                  </optgroup>
+
+                  <!-- Cruzamento -->
+                  <optgroup label="Cruzamento">
+                    <option value="canchim">Canchim</option>
+                    <option value="tabapuã">Tabapuã</option>
+                    <option value="indubrasil">Indubrasil</option>
+                    <option value="sindi">Sindi</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <p>GÊNERO DO ANIMAL</p>
+              <div class="d-flex gap-4 mb-4">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="genero"
+                  id="macho"
+                  value="macho"
+                  autocomplete="off"
+                  checked
+                />
+                <label
+                  class="btn btn-outline-danger w-50 py-3 fs-5 fw-bold"
+                  for="macho"
+                >
+                  <i class="bi bi-gender-male"></i> Macho
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="genero"
+                  id="femea"
+                  value="femea"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-danger w-50 py-3 fs-5 fw-bold"
+                  for="femea"
+                >
+                  <i class="bi bi-gender-female"></i> Fêmea
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <fieldset>
+                <legend class="fw-bold mb-2">IDADE DO ANIMAL</legend>
+                <div class="row g-2">
+                  <div class="col-6 col-md-3">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="idade"
+                      id="idade1"
+                      value="0-12"
+                      autocomplete="off"
+                    />
+                    <label class="btn btn-outline-secondary w-100" for="idade1"
+                      >0-12 meses</label
+                    >
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="idade"
+                      id="idade2"
+                      value="12-24"
+                      autocomplete="off"
+                    />
+                    <label class="btn btn-outline-secondary w-100" for="idade2"
+                      >12-24 meses</label
+                    >
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="idade"
+                      id="idade3"
+                      value="24-36"
+                      autocomplete="off"
+                    />
+                    <label class="btn btn-outline-secondary w-100" for="idade3"
+                      >24-36 meses</label
+                    >
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="idade"
+                      id="idade4"
+                      value="+36"
+                      autocomplete="off"
+                    />
+                    <label class="btn btn-outline-secondary w-100" for="idade4"
+                      >+36 meses</label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
