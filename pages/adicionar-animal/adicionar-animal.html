@@ -32,11 +32,11 @@
       <section
         class="d-flex flex-column justify-content-center align-items-center"
       >
-        <div class="div-tamanho">
+        <div class="div-tamanho mx-2 mb-5">
           <div class="position-relative imagem">
             <img
               class="rounded-top-4 boi-burro w-100"
-              src="https://res.cloudinary.com/dzkkqkuav/image/upload/w_670,h_192,q_auto,f_auto/v1778531756/IMG_20260208_185633_tgokif.jpg"
+              src="https://res.cloudinary.com/dzkkqkuav/image/upload/w_670,h_300,q_auto,f_auto/v1778531756/IMG_20260208_185633_tgokif.jpg"
               alt=""
             />
 
@@ -48,7 +48,10 @@
             </div>
           </div>
 
-          <form class="d-flex flex-column pt-4 m-0 px-3 rounded-bottom-4">
+          <form
+            action="../animais/animais.html"
+            class="d-flex flex-column pt-4 m-0 px-4 rounded-bottom-4"
+          >
             <div class="row g-2 pb-4">
               <div class="col-12 col-md-6">
                 <div class="mb-3">
@@ -119,12 +122,8 @@
                   id="macho"
                   value="macho"
                   autocomplete="off"
-                  checked
                 />
-                <label
-                  class="btn btn-outline-danger w-50 py-3 fs-5 fw-bold"
-                  for="macho"
-                >
+                <label class="btn w-50 py-3 fs-5 fw-bold" for="macho">
                   <i class="bi bi-gender-male"></i> Macho
                 </label>
 
@@ -136,73 +135,86 @@
                   value="femea"
                   autocomplete="off"
                 />
-                <label
-                  class="btn btn-outline-danger w-50 py-3 fs-5 fw-bold"
-                  for="femea"
-                >
+                <label class="btn w-50 py-3 fs-5 fw-bold" for="femea">
                   <i class="bi bi-gender-female"></i> Fêmea
                 </label>
               </div>
             </div>
 
-            <div class="col-12 mb-4">
-              <fieldset>
-                <legend class="fw-bold mb-2">IDADE DO ANIMAL</legend>
-                <div class="row g-2">
-                  <div class="col-6 col-md-3">
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="idade"
-                      id="idade1"
-                      value="0-12"
-                      autocomplete="off"
-                    />
-                    <label class="btn btn-outline-secondary w-100" for="idade1"
-                      >0-12 meses</label
-                    >
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="idade"
-                      id="idade2"
-                      value="12-24"
-                      autocomplete="off"
-                    />
-                    <label class="btn btn-outline-secondary w-100" for="idade2"
-                      >12-24 meses</label
-                    >
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="idade"
-                      id="idade3"
-                      value="24-36"
-                      autocomplete="off"
-                    />
-                    <label class="btn btn-outline-secondary w-100" for="idade3"
-                      >24-36 meses</label
-                    >
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="idade"
-                      id="idade4"
-                      value="+36"
-                      autocomplete="off"
-                    />
-                    <label class="btn btn-outline-secondary w-100" for="idade4"
-                      >+36 meses</label
-                    >
-                  </div>
+            <div class="col-12 mb-4 border-bottom border-secondary pb-4">
+              <p>IDADE DO ANIMAL</p>
+              <div class="row g-2">
+                <div class="col-6 col-md-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idade"
+                    id="idade1"
+                    value="0-12"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary w-100" for="idade1"
+                    >0-12 meses</label
+                  >
                 </div>
-              </fieldset>
+                <div class="col-6 col-md-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idade"
+                    id="idade2"
+                    value="12-24"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary w-100" for="idade2"
+                    >12-24 meses</label
+                  >
+                </div>
+                <div class="col-6 col-md-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idade"
+                    id="idade3"
+                    value="24-36"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary w-100" for="idade3"
+                    >24-36 meses</label
+                  >
+                </div>
+                <div class="col-6 col-md-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idade"
+                    id="idade4"
+                    value="+36"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary w-100" for="idade4"
+                    >+36 meses</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row flex-column flex-md-row pb-4">
+              <div class="col-12 col-md-6 mb-3">
+                <button
+                  type="button"
+                  class="btn btn-primary w-100"
+                  type="submit"
+                >
+                  Primary
+                </button>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <button type="button" class="btn btn-outline-secondary w-100">
+                  Secondary
+                </button>
+              </div>
             </div>
           </form>
         </div>

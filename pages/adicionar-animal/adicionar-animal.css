@@ -91,4 +91,5 @@ body section .imagem .titulo p {
 }
 body section form {
   background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=adicionar-animal.css.map */
