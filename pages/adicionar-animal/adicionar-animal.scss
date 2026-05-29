@@ -31,11 +31,13 @@ body {
                 max-width: 80%;
 
                 h1 {
+                    font-size: clamp(1.05rem, 0.389rem + 3.2046vw, 3.125rem);
                     color: $cor-superficie;
                     font-weight: $peso-botao;
                 }
 
                 p {
+                    font-size: clamp(0.625rem, 0.5056rem + 0.5792vw, 1rem);
                     color: $cor-fundo-alternativa2;
                 }
             }
@@ -44,6 +46,141 @@ body {
         form {
             background-color: $cor-superficie;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-        }
+
+            label {
+                color: $cor-primaria;
+                font-family: $fonte-texto;
+                font-weight: $peso-botao;
+            }
+
+            .form-control {
+                background-color: $cor-fundo-alternativa;
+                border-radius: 0.75rem !important;
+                box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+                    &::placeholder{
+                        font-family: $fonte-texto;
+                        color: rgba($cor-texto-corpo, 0.6);
+                        font-weight: $peso-texto;
+                     }
+
+                     &:focus {
+                        background-color: $cor-fundo-alternativa;
+                        border: .0625rem solid $cor-primaria;
+                        box-shadow: none;
+                    }
+                }
+
+
+                .form-select {
+                    background-color: $cor-fundo-alternativa !important;
+                    border-radius: 0.75rem !important;
+                    font-family: $fonte-texto;
+                    color: rgba($cor-texto-corpo, 0.6);
+                    font-weight: $peso-texto;
+                    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+
+                        &:focus {
+                            border: .0625rem solid $cor-primaria;
+                            box-shadow: none;
+                        }
+                }
+
+                .genero {
+                    p {
+                        color: $cor-primaria;
+                        font-family: $fonte-texto;
+                        font-weight: $peso-botao;
+                    }
+
+                    label {
+                        background-color: $cor-fundo-alternativa;
+                        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+                        border-radius: 0.75rem !important;
+
+                        &:hover {
+                            background-color: $cor-fundo-alternativa !important;
+                        }
+                    }
+
+                    #macho:checked + .macho {
+                        background-color: rgba(135, 206, 250, 0.3);
+                        border: 1px solid rgba(135, 206, 250, 1);
+
+                            &:hover {
+                                background-color: rgba(135, 206, 250, 0.3) !important;
+                            }
+                    }
+
+                    #femea:checked + .femea {
+                        background-color: rgba(255, 182, 193, 0.5);
+                        border: 1px solid rgba(255, 182, 193, 1);
+
+                            &:hover {
+                                background-color: rgba(255, 182, 193, 0.5) !important;
+                            }
+                    }
+                }
+
+                .idade {
+                    p {
+                        color: $cor-primaria;
+                        font-family: $fonte-texto;
+                        font-weight: $peso-botao;
+                    }
+
+                    label {
+                        background-color: $cor-fundo-alternativa;
+                        color: $cor-neutra;
+                        font-family: $fonte-texto;
+                        font-weight: $peso-texto;
+                        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+                        border: transparent;
+                        border-radius: 0.75rem !important;
+                    }
+
+                    .btn-check:checked + label {
+                        background-color: rgba($cor-sucesso, 0.1);
+                        color: $cor-sucesso-escuro;
+                        border: 1px solid $cor-sucesso-escuro;
+                    }
+                }
+
+                .voltar {
+                    &:hover {
+                        color: $cor-primaria;
+                    }
+                    .seta1 {
+                        transition: transform 0.3s ease;
+                        display: inline-block;
+                        }
+
+                        &:hover .seta1 {
+                            transform: translateX(-0.375rem);
+                        }
+
+                        button {
+                            border: none;
+
+                            &:focus,
+                            &:active {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                }
+
+
+                .adicionar {
+                    .seta2 {
+                        transition: transform 0.3s ease;
+                        display: inline-block;
+                        }
+
+                        &:hover .seta2 {
+                            transform: translateX(0.375rem);
+                        }
+
+                }
+    }
 }  
 }

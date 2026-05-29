@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="../adicionar-animal/adicionar-animal.css" />
   </head>
   <body class="vh-100">
-    <header class="d-flex mb-5 align-items-center">
+    <header class="sticky-top">
       <div class="d-flex col-12 justify-content-center">
         <img src="../../assets/img/logo2.png" alt="" class="logo" />
       </div>
     </header>
     <main class="container">
       <section
-        class="d-flex flex-column justify-content-center align-items-center"
+        class="d-flex flex-column justify-content-center align-items-center mt-5"
       >
         <div class="div-tamanho mx-2 mb-5">
           <div class="position-relative imagem">
@@ -56,7 +56,7 @@
               <div class="col-12 col-md-6">
                 <div class="mb-3">
                   <label for="" class="form-label"
-                    >NUMERO DE IDENTIFICAÇÃO (BRINCO)</label
+                    >Número de Identificação (Brinco)</label
                   >
                   <input
                     type="text"
@@ -112,8 +112,8 @@
               </div>
             </div>
 
-            <div class="mb-4">
-              <p>GÊNERO DO ANIMAL</p>
+            <div class="mb-4 genero">
+              <p>Gênero do Animal</p>
               <div class="d-flex gap-4 mb-4">
                 <input
                   type="radio"
@@ -122,8 +122,9 @@
                   id="macho"
                   value="macho"
                   autocomplete="off"
+                  required
                 />
-                <label class="btn w-50 py-3 fs-5 fw-bold" for="macho">
+                <label class="btn w-50 py-3 fs-5 fw-bold macho" for="macho">
                   <i class="bi bi-gender-male"></i> Macho
                 </label>
 
@@ -135,16 +136,16 @@
                   value="femea"
                   autocomplete="off"
                 />
-                <label class="btn w-50 py-3 fs-5 fw-bold" for="femea">
+                <label class="btn w-50 py-3 fs-5 fw-bold femea" for="femea">
                   <i class="bi bi-gender-female"></i> Fêmea
                 </label>
               </div>
             </div>
 
-            <div class="col-12 mb-4 border-bottom border-secondary pb-4">
-              <p>IDADE DO ANIMAL</p>
+            <div class="col-12 mb-4 pb-4 idade">
+              <p>Idade do Animal</p>
               <div class="row g-2">
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3 mb-2">
                   <input
                     type="radio"
                     class="btn-check"
@@ -152,6 +153,7 @@
                     id="idade1"
                     value="0-12"
                     autocomplete="off"
+                    required
                   />
                   <label class="btn btn-outline-secondary w-100" for="idade1"
                     >0-12 meses</label
@@ -199,20 +201,18 @@
               </div>
             </div>
 
-            <div class="row flex-column flex-md-row pb-4">
-              <div class="col-12 col-md-6 mb-3">
-                <button
-                  type="button"
-                  class="btn btn-primary w-100"
-                  type="submit"
-                >
-                  Primary
-                </button>
-              </div>
+            <div class="row flex-column flex-md-row pb-4 gy-2">
+              <a href="../animais/animais.html" class="col-12 col-md-6 voltar">
+                <div>
+                  <button type="button" class="btn btn-outline-none w-100">
+                    <i class="bi bi-arrow-left seta1"></i> Voltar
+                  </button>
+                </div>
+              </a>
 
-              <div class="col-12 col-md-6">
-                <button type="button" class="btn btn-outline-secondary w-100">
-                  Secondary
+              <div class="col-12 col-md-6 mb-3">
+                <button class="btn btn-primary w-100 adicionar" type="submit">
+                  Adicionar Animal <i class="bi bi-arrow-right seta2"></i>
                 </button>
               </div>
             </div>

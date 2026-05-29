@@ -59,6 +59,17 @@ label {
   box-shadow: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f3eae8 inset !important;
+  -webkit-text-fill-color: #5a413a !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 body {
   background-color: #f7f3f1;
 }
