@@ -86,7 +86,8 @@ body header .logo {
 body section .div-tamanho {
   max-width: 42.125rem;
 }
-body section .imagem .boi-burro {
+body section .imagem .boi {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

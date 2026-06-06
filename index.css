@@ -1,5 +1,4 @@
 body {
-  display: flex;
   margin: 0;
 }
 
@@ -88,21 +87,23 @@ header {
 /* Inicio container */
 /* Inicio foto */
 #container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 #foto {
-  width: 100%;
   height: 100vh;
+  width: auto;
   background-image: url(assets/img/campo.avif);
   background-size: cover;
 }
 
-#foto img {
+/* #foto img {
   width: 100%;
   height: 100%;
-}
+} */
 
 #container h1 {
   position: absolute;
@@ -110,16 +111,16 @@ header {
   color: white;
   top: 31vh;
   left: 4vw;
-  font-size: 4rem;
+  font-size: clamp(2rem, 1.3629rem + 3.0888vw, 4rem);
   font-weight: 800;
   max-width: 37.5rem;
 }
 
 @media (max-width: 768px) {
   #container h1 {
-    font-size: 2rem;
+    top: 35vh;
     left: 4vw;
-    max-width: 12.5rem;
+    max-width: 20rem;
   }
 }
 
@@ -136,7 +137,7 @@ header {
 @media (max-width: 768px) {
   #container h6 {
     top: 27vh;
-    font-size: 0.45rem;
+    font-size: 0.7rem;
     padding: 0.2188rem 0.75rem;
   }
 }
