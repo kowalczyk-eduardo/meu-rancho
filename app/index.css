@@ -96,7 +96,7 @@ header {
 #foto {
   height: 100vh;
   width: auto;
-  background-image: url(assets/img/campo.avif);
+  background-image: url(../assets/resources/images/campo.avif);
   background-size: cover;
 }
 

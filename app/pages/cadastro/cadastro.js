@@ -45,5 +45,5 @@ form.addEventListener("submit", (event) => {
 
     localStorage.setItem("usuario", JSON.stringify(usuario));
 
-    window.location.href = "../login/login.html";
+    window.location.href = "../login/index.html";
 });

@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
         senhaDigitada === usuario.senha
     ) {
         alert("Login realizado com sucesso!");
-        window.location.href = "/meu-rancho/pages/propriedades/propriedades.html";
+        window.location.href = "../propriedades/index.html";
     } else if (emailDigitado !== usuario.email) {
         emailInput.setCustomValidity("E-mail não encontrado.");
         emailInput.reportValidity();
