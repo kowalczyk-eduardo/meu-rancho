@@ -1,5 +1,10 @@
+import Usuario from "../../model/Usuario.js";
+import UsuarioService from "../../service/UsuarioService.js";
+
 const form = document.getElementById("formCadastro");
 const senha = document.getElementById("senha");
+
+const service = new UsuarioService();
 
 senha.addEventListener("input", () => {
     const valor = senha.value;
@@ -29,7 +34,7 @@ senha.addEventListener("blur", () => {
     senha.reportValidity();
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     if (!form.checkValidity()) {
@@ -37,13 +42,12 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    const usuario = {
-        nome: document.getElementById("nome").value,
-        email: document.getElementById("email").value,
-        senha: document.getElementById("senha").value
-    };
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
 
-    localStorage.setItem("usuario", JSON.stringify(usuario));
+    const usuario = new Usuario(nome, email, senha);
 
+    await service.cadastrar(usuario);
     window.location.href = "../login/index.html";
 });

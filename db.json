@@ -1,7 +1,13 @@
 {
-  "usuarios": [],
-
+  "usuarios": [
+    {
+      "nome": "Eduardo",
+      "email": "eduardo@gmail.com",
+      "senha": "Eduardo01",
+      "id": "Dvui4_KUsf8"
+    }
+  ],
   "propriedades": [],
-
-  "animais": []
+  "animais": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
