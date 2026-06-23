@@ -3,11 +3,37 @@
     {
       "nome": "Eduardo",
       "email": "eduardo@gmail.com",
-      "senha": "Eduardo01",
-      "id": "Dvui4_KUsf8"
+      "senha": "Pitu04102005",
+      "id": "QbA1abBdqD8"
     }
   ],
-  "propriedades": [],
-  "animais": [],
+  "propriedades": [
+    {
+      "nome": "Xaxim Velho",
+      "cidade": "Guarapuava",
+      "estado": "PR",
+      "usuarioId": "QbA1abBdqD8",
+      "imagem": "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531757/IMG_20241110_184047_HDR_2_bruvrc.jpg",
+      "id": "Ijz-6e8Yo9Y"
+    }
+  ],
+  "animais": [
+    {
+      "brinco": "04",
+      "genero": "macho",
+      "idade": "24-36",
+      "raca": "Brahman",
+      "propriedadeId": "Ijz-6e8Yo9Y",
+      "id": "vsrc3bIsD04"
+    },
+    {
+      "brinco": "10",
+      "genero": "femea",
+      "idade": "+36",
+      "raca": "Canchim",
+      "propriedadeId": "Ijz-6e8Yo9Y",
+      "id": "vgBjJ5NYRj4"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

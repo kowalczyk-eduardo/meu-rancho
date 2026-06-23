@@ -118,4 +118,17 @@ body main .card-body .badge {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border: 0.0625rem solid rgba(4, 120, 87, 0.2);
+}
+body main .btn-excluir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: rgb(206, 104, 117);
+  transition: color 0.2s ease;
+  border: none;
+}
+body main .btn-excluir:hover {
+  color: #f30404;
 }/*# sourceMappingURL=propriedades.css.map */

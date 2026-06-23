@@ -1,4 +1,4 @@
-@use "../../.../assets/resources/scss/globals" as *;
+@use "../../../assets/resources/scss/globals" as *;
 
 body {
   background-color: $cor-fundo-principal;
@@ -65,6 +65,21 @@ body {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         border: 0.0625rem solid rgba($cor-sucesso-escuro, 0.2);
+      }
+    }
+
+    .btn-excluir {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      color: rgb(206, 104, 117);
+      transition: color 0.2s ease;
+      border: none;
+
+      &:hover {
+        color: #f30404;
       }
     }
   }
