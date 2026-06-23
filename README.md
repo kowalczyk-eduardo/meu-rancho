@@ -21,7 +21,7 @@ Em andamento.
 ## 💻 Tecnologias e Dependências
 
 - **Framework CSS - Bootstrap:** O Bootstrap foi escolhido por oferecer responsividade nativa, componentes prontos, suporte a interações com JavaScript, além de ser um framework estável, atualizado e com licença livre.
-- **GiroRuralAPI:**  API responsável por fornecer dados relacionados ao agronegócio, como informações de propriedades, animais e indicadores de mercado.
+- **Open-Meteo:**  API responsável por fornecer dados climáticos e previsões meteorológicas. Através dela, é possível consultar informações de uma determinada localização geográfica, como temperatura atual, temperaturas máximas e mínimas, probabilidade de precipitação e previsão do tempo para os dias seguintes.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
