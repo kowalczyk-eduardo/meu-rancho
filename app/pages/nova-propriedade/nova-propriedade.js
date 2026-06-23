@@ -30,9 +30,12 @@ document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const inputs = event.target.querySelectorAll("input");
-    const nome   = inputs[0].value.trim();
-    const cidade = inputs[1].value.trim();
-    const estado = inputs[2].value.trim().toUpperCase();
+    const nome = document.getElementById("nome").value.trim();
+    const cidade = document.getElementById("cidade").value.trim()
+    .split(" ")
+    .map(p => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase())
+    .join(" ");
+    const estado = document.getElementById("estado").value.trim().toUpperCase();
 
     const propriedade = new Propriedade(nome, cidade, estado, usuario.id, sortearImagem());
 

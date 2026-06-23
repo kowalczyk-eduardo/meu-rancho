@@ -48,19 +48,6 @@ body {
       }
     }
 
-    .botao-drop {
-      background-color: $cor-neutra !important;
-    }
-
-    .botao-off {
-      color: $cor-filtro;
-      background-color: transparent !important;
-      --bs-btn-color: $cor-filtro !important;
-      --bs-btn-active-color: $cor-filtro !important;
-      --bs-btn-hover-color: $cor-filtro !important;
-      --bs-btn-focus-color: $cor-filtro !important;
-    }
-
     h1 {
       font-size: $tamanho-titulo-principal;
     }
@@ -85,6 +72,22 @@ body {
         background-color: rgba($cor-neutra, 0.1);
       }
 
+      .icone-vazio {
+        border: none;
+        background-color: transparent;
+        color: #ced4da;
+      }
+
+      .bi-trash3 {
+        color: $cor-primaria;
+        transition: color 0.2s ease;
+        border: none;
+
+        &:hover {
+          color: #f30404;
+        }
+      }
+
       .badge {
         color: $cor-texto-principal;
         font-family: $fonte-texto;
@@ -100,6 +103,113 @@ body {
 
       p {
         color: rgba($cor-texto-corpo, 0.7);
+      }
+    }
+  }
+
+  /* ── Carousel de clima ───────────────────────────────────────────────────── */
+  #carouselClima {
+    position: relative;
+  }
+
+  .card-clima {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  }
+
+  .card-clima .label-dia {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #db4b1f;
+  }
+
+  .card-clima .label-cidade {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.85rem;
+    color: #5a413a;
+  }
+
+  .card-clima .icone-clima {
+    font-size: 2.5rem;
+    color: #db4b1f;
+    border: none;
+    background: none;
+  }
+
+  .card-clima .temperatura-atual {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1b110e;
+  }
+
+  .card-clima .temperatura-min {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(90, 65, 58, 0.5);
+  }
+
+  .card-clima .descricao-clima {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.9rem;
+    color: rgba(90, 65, 58, 0.7);
+  }
+
+  .card-clima .info-clima {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.85rem;
+    color: rgba(90, 65, 58, 0.7);
+  }
+
+  .btn-carousel-prev,
+  .btn-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+    color: #1b110e;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-carousel-prev {
+    left: -1rem;
+  }
+  .btn-carousel-next {
+    right: -1rem;
+  }
+
+  .btn-carousel-prev:hover,
+  .btn-carousel-next:hover {
+    background-color: #db4b1f;
+    color: #ffffff;
+  }
+
+  .filtros {
+    background-color: $cor-superficie;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+
+    #btnReset {
+      color: $cor-texto-corpo;
+      border: none;
+
+      &:hover {
+        background-color: rgba($cor-neutra, 0.3);
+      }
+
+      &:active {
+        transform: scale(0.9);
       }
     }
   }
