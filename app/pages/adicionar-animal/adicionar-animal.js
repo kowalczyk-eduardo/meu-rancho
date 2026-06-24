@@ -3,14 +3,14 @@ import AnimalService from "../../service/AnimalService.js";
 
 const service = new AnimalService();
 
-// ── Guarda de sessão ─────────────────────────────────────────────────────────
+//  Guarda de sessão 
 const sessao = sessionStorage.getItem("usuarioLogado") || localStorage.getItem("usuarioLogado");
 if (!sessao) window.location.href = "../login/index.html";
 
 const propriedade = JSON.parse(sessionStorage.getItem("propriedadeSelecionada"));
 if (!propriedade) window.location.href = "../propriedades/index.html";
 
-// ── Submit ───────────────────────────────────────────────────────────────────
+//  Submit 
 document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -24,4 +24,12 @@ document.querySelector("form").addEventListener("submit", async (event) => {
 
     await service.cadastrar(animal);
     window.location.href = "../animais/index.html";
+});
+
+$(document).ready(function () {
+    $("#numeroBrinco").mask("0000", {
+        translation: {
+            "0": { pattern: /[0-9]/ }
+        }
+    });
 });

@@ -3,17 +3,17 @@ import AnimalService from "../../service/AnimalService.js";
 
 const service = new AnimalService();
 
-// ── Guarda de sessão ─────────────────────────────────────────────────────────
+//  Guarda de sessão 
 const sessao = sessionStorage.getItem("usuarioLogado") || localStorage.getItem("usuarioLogado");
 if (!sessao) window.location.href = "../login/index.html";
 
 const propriedade = JSON.parse(sessionStorage.getItem("propriedadeSelecionada"));
 if (!propriedade) window.location.href = "../propriedades/index.html";
 
-// ── Título da página ─────────────────────────────────────────────────────────
+//  Título da página 
 document.querySelector("h1").textContent = `Animais: ${propriedade.nome}`;
 
-// ── Renderiza cards ──────────────────────────────────────────────────────────
+//  Renderiza cards 
 const container = document.querySelector(".cards");
 
 function iconeGenero(genero) {
@@ -56,7 +56,7 @@ function criarCardVazio() {
     `;
 }
 
-// ── Variável global para guardar os animais carregados ───────────────────────
+// Variável global para guardar os animais carregados
 let animaisCarregados = [];
 
 async function carregarAnimais() {
@@ -85,7 +85,7 @@ function renderizarAnimais(animais) {
     });
 }carregarAnimais();
 
-// ── Filtros ──────────────────────────────────────────────────────────────────
+// Filtros 
 function aplicarFiltros() {
     const genero = document.getElementById("selectGenero")?.value;
     const brinco = document.getElementById("pesquisarBrinco")?.value.trim().toLowerCase();
@@ -132,77 +132,102 @@ function resetarFiltros() {
 document.getElementById("btnSalvar")?.addEventListener("click", aplicarFiltros);
 document.getElementById("btnReset")?.addEventListener("click", resetarFiltros);
 
+// API pública 
 const climaService = new ClimaService();
 
 async function carregarClima() {
     const { cidade, estado } = propriedade;
 
-    const coordenadas = await climaService.buscarCoordenadas(cidade);
+    try {
+        const coordenadas = await climaService.buscarCoordenadas(cidade);
 
-    if (!coordenadas) return;
-
-    const dados = await climaService.buscarClima(coordenadas.latitude, coordenadas.longitude);
-
-    const { current, daily } = dados;
-    const climaAtual = climaService.descricaoClima(current.weather_code);
-
-    // Monta o card "Agora"
-    const cardAtual = `
-        <div class="carousel-item active">
-            <div class="card-clima card rounded-4 border-0 p-3">
-                <div class="d-flex align-items-center justify-content-between mb-2">
-                    <div>
-                        <p class="label-dia mb-0">Agora</p>
-                        <p class="label-cidade mb-0">${cidade}, ${estado}</p>
+        if (!coordenadas) {
+            document.getElementById("climaCards").innerHTML = `
+                <div class="carousel-item active">
+                    <div class="card-clima card rounded-4 border-0 p-3 text-muted">
+                        <i class="bi bi-cloud-slash"></i> Não foi possível encontrar a localização de <strong>${cidade}</strong>
                     </div>
-                    <i class="bi ${climaAtual.icone} icone-clima"></i>
                 </div>
-                <div class="d-flex align-items-end justify-content-between">
-                    <span class="temperatura-atual">${current.temperature_2m}°C</span>
-                    <span class="descricao-clima">${climaAtual.descricao}</span>
-                </div>
-                <hr class="my-2">
-                <div class="d-flex justify-content-between info-clima">
-                    <span><i class="bi bi-droplet"></i> ${current.relative_humidity_2m}%</span>
-                    <span><i class="bi bi-wind"></i> ${current.wind_speed_10m} km/h</span>
-                    <span><i class="bi bi-cloud-rain"></i> ${current.precipitation} mm</span>
+            `;
+            return;
+        }
+
+        const dados = await climaService.buscarClima(coordenadas.latitude, coordenadas.longitude);
+
+        if (!dados?.current || !dados?.daily) {
+            throw new Error("Dados do clima incompletos.");
+        }
+        
+        const { current, daily } = dados;
+        const climaAtual = climaService.descricaoClima(current.weather_code);
+
+            // Monta o card "Agora"
+        const cardAtual = `
+            <div class="carousel-item active">
+                <div class="card-clima card rounded-4 border-0 p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div>
+                            <p class="label-dia mb-0">Agora</p>
+                            <p class="label-cidade mb-0">${cidade}, ${estado}</p>
+                        </div>
+                        <i class="bi ${climaAtual.icone} icone-clima"></i>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between">
+                        <span class="temperatura-atual">${current.temperature_2m}°C</span>
+                        <span class="descricao-clima">${climaAtual.descricao}</span>
+                    </div>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-between info-clima">
+                        <span><i class="bi bi-droplet"></i> ${current.relative_humidity_2m}%</span>
+                        <span><i class="bi bi-wind"></i> ${current.wind_speed_10m} km/h</span>
+                        <span><i class="bi bi-cloud-rain"></i> ${current.precipitation} mm</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
+        `;
 
-    // Monta os 7 cards de previsão diária
-    const cardsDiarios = daily.time.slice(1).map((data, i) => {
-        const index = i + 1;
-        const { descricao, icone } = climaService.descricaoClima(daily.weather_code[index]);
-        const diaSemana = climaService.formatarDiaSemana(data, index);
+        // Monta os 7 cards de previsão diária
+        const cardsDiarios = daily.time.slice(1).map((data, i) => {
+            const index = i + 1;
+            const { descricao, icone } = climaService.descricaoClima(daily.weather_code[index]);
+            const diaSemana = climaService.formatarDiaSemana(data, index);
 
-    return `
-        <div class="carousel-item">
-            <div class="card-clima card rounded-4 border-0 p-3">
-                <div class="d-flex align-items-center justify-content-between mb-2">
-                    <div>
-                        <p class="label-dia mb-0">${diaSemana}</p>
-                        <p class="label-cidade mb-0">${cidade}, ${estado}</p>
+        return `
+            <div class="carousel-item">
+                <div class="card-clima card rounded-4 border-0 p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div>
+                            <p class="label-dia mb-0">${diaSemana}</p>
+                            <p class="label-cidade mb-0">${cidade}, ${estado}</p>
+                        </div>
+                        <i class="bi ${icone} icone-clima"></i>
                     </div>
-                    <i class="bi ${icone} icone-clima"></i>
-                </div>
-                <div class="d-flex align-items-end justify-content-between">
-                    <div class="d-flex gap-2 align-items-end">
-                        <span class="temperatura-atual">${daily.temperature_2m_max[index]}°C</span>
-                        <span class="temperatura-min mb-1">${daily.temperature_2m_min[index]}°C</span>
+                    <div class="d-flex align-items-end justify-content-between">
+                        <div class="d-flex gap-2 align-items-end">
+                            <span class="temperatura-atual">${daily.temperature_2m_max[index]}°C</span>
+                            <span class="temperatura-min mb-1">${daily.temperature_2m_min[index]}°C</span>
+                        </div>
+                        <span class="descricao-clima">${descricao}</span>
                     </div>
-                    <span class="descricao-clima">${descricao}</span>
-                </div>
-                <hr class="my-2">
-                <div class="d-flex justify-content-between info-clima">
-                    <span><i class="bi bi-cloud-rain"></i> ${daily.precipitation_sum[index]} mm</span>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-between info-clima">
+                        <span><i class="bi bi-cloud-rain"></i> ${daily.precipitation_sum[index]} mm</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
-    }).join("");
+        `;
+        }).join("");
 
-    document.getElementById("climaCards").innerHTML = cardAtual + cardsDiarios;
+        document.getElementById("climaCards").innerHTML = cardAtual + cardsDiarios;
+        } catch (erro) {
+            console.error("Erro ao carregar clima:", erro);
+            document.getElementById("climaCards").innerHTML = `
+                <div class="carousel-item active">
+                    <div class="card-clima card rounded-4 border-0 p-3 text-muted">
+                        <i class="bi bi-wifi-off"></i> Não foi possível carregar o clima. Verifique sua conexão.
+                    </div>
+                </div>
+            `;
+    }   
 }
 carregarClima();

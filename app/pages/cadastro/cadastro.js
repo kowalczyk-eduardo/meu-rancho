@@ -6,7 +6,7 @@ const senha = document.getElementById("senha");
 
 const service = new UsuarioService();
 
-// ── Helpers de erro inline ───────────────────────────────────────────────────
+//  Helpers de erro inline 
 function exibirErro(input, mensagem) {
     input.classList.add("is-invalid");
 
@@ -29,14 +29,14 @@ function limparErro(input) {
     }
 }
 
-// ── Limpa erro ao digitar ────────────────────────────────────────────────────
+//  Limpa erro ao digitar 
 ["nome", "email", "senha"].forEach((id) => {
     document.getElementById(id).addEventListener("input", function () {
         limparErro(this);
     });
 });
 
-// ── Validação de senha ao sair do campo ─────────────────────────────────────
+//  Validação de senha ao sair do campo 
 senha.addEventListener("blur", () => {
     const valor = senha.value;
     if (!valor) return;
@@ -52,7 +52,7 @@ senha.addEventListener("blur", () => {
     }
 });
 
-// ── Submit do formulário ─────────────────────────────────────────────────────
+//  Submit do formulário 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
 

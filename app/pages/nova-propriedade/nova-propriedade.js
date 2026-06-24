@@ -3,13 +3,13 @@ import PropriedadeService from "../../service/PropriedadeService.js";
 
 const service = new PropriedadeService();
 
-// ── Guarda de sessão ─────────────────────────────────────────────────────────
+//  Guarda de sessão 
 const sessao = sessionStorage.getItem("usuarioLogado") || localStorage.getItem("usuarioLogado");
 if (!sessao) window.location.href = "../login/index.html";
 
 const usuario = JSON.parse(sessao);
 
-// ── Imagens ───────────────────────────────────────────────────────────────
+//  Imagens 
 const imagensDisponiveis = [
     "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531758/IMG_20250610_172801_kaiwk5.jpg",
     "https://res.cloudinary.com/dzkkqkuav/image/upload/q_100,f_auto,w_291,h_192/v1778531756/IMG_20260421_163200_czivg4.jpg",
@@ -25,7 +25,7 @@ function sortearImagem() {
     return imagensDisponiveis[indice];
 }
 
-// ── Submit ───────────────────────────────────────────────────────────────────
+//  Submit 
 document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
 

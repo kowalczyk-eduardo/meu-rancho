@@ -25,15 +25,15 @@ export default class ClimaService {
     }
 
     descricaoClima(codigo) {
-        if (codigo === 0)   return { descricao: "Céu limpo",           icone: "bi-sun" };
-        if (codigo <= 2)    return { descricao: "Parcialmente nublado", icone: "bi-cloud-sun" };
-        if (codigo === 3)   return { descricao: "Nublado",              icone: "bi-clouds" };
-        if (codigo <= 48)   return { descricao: "Neblina",              icone: "bi-cloud-fog2" };
-        if (codigo <= 57)   return { descricao: "Garoa",                icone: "bi-cloud-drizzle" };
-        if (codigo <= 67)   return { descricao: "Chuva",                icone: "bi-cloud-rain" };
-        if (codigo <= 77)   return { descricao: "Neve",                 icone: "bi-cloud-snow" };
-        if (codigo <= 82)   return { descricao: "Pancadas de chuva",    icone: "bi-cloud-rain-heavy" };
-        if (codigo <= 99)   return { descricao: "Tempestade",           icone: "bi-cloud-lightning-rain" };
+        if (codigo === 0) return { descricao: "Céu limpo",           icone: "bi-sun" };
+        if (codigo <= 2) return { descricao: "Parcialmente nublado", icone: "bi-cloud-sun" };
+        if (codigo === 3) return { descricao: "Nublado",              icone: "bi-clouds" };
+        if (codigo <= 48) return { descricao: "Neblina",              icone: "bi-cloud-fog2" };
+        if (codigo <= 57) return { descricao: "Garoa",                icone: "bi-cloud-drizzle" };
+        if (codigo <= 67) return { descricao: "Chuva",                icone: "bi-cloud-rain" };
+        if (codigo <= 77) return { descricao: "Neve",                 icone: "bi-cloud-snow" };
+        if (codigo <= 82) return { descricao: "Pancadas de chuva",    icone: "bi-cloud-rain-heavy" };
+        if (codigo <= 99) return { descricao: "Tempestade",           icone: "bi-cloud-lightning-rain" };
         return { descricao: "Indisponível", icone: "bi-question-circle" };
     }
 
@@ -43,5 +43,4 @@ export default class ClimaService {
         return data.toLocaleDateString("pt-BR", { weekday: "long" })
             .replace(/^\w/, c => c.toUpperCase());
     }
-
 }

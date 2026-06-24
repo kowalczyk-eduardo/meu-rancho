@@ -1,13 +1,13 @@
 $(function () {
 
-    // ── Pré-preenche o e-mail se "Lembrar de mim" estava marcado ────────────
+    //  Pré-preenche o e-mail se "Lembrar de mim" estava marcado 
     const emailSalvo = localStorage.getItem("emailLembrado");
     if (emailSalvo) {
         $("#email").val(emailSalvo);
         $("#lembrar").prop("checked", true);
     }
 
-    // ── Exibe/oculta alerta de erro ──────────────────────────────────────────
+    //  Exibe/oculta alerta de erro 
     function exibirErro(mensagem) {
         let $alerta = $("#alertaLogin");
 
@@ -27,7 +27,7 @@ $(function () {
         $("#alertaLogin").hide();
     }
 
-    // ── Submit do formulário ─────────────────────────────────────────────────
+    //  Submit do formulário 
     $("#formLogin").on("submit", function (event) {
         event.preventDefault();
 
@@ -55,7 +55,7 @@ $(function () {
                     return;
                 }
 
-                // ── Lembrar de mim ───────────────────────────────────────────
+                //  Lembrar de mim 
                 if ($("#lembrar").is(":checked")) {
                     localStorage.setItem("emailLembrado", email);
                 } else {
@@ -69,5 +69,4 @@ $(function () {
             }
         });
     });
-
 });

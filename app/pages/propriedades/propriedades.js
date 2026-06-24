@@ -1,27 +1,23 @@
 import PropriedadeService from "../../service/PropriedadeService.js";
+import AnimalService from "../../service/AnimalService.js";
 
+const animalService = new AnimalService();
 const service = new PropriedadeService();
 
-// ── Guarda de sessão ─────────────────────────────────────────────────────────
+//  Guarda de sessão 
 const sessao = sessionStorage.getItem("usuarioLogado") || localStorage.getItem("usuarioLogado");
 if (!sessao) window.location.href = "../login/index.html";
 
 const usuario = JSON.parse(sessao);
 
-// ── Renderiza os cards ───────────────────────────────────────────────────────
+//  Renderiza os cards 
 const container = document.querySelector(".cards");
 
-function criarCard(propriedade) {
-    const imagemHtml = propriedade.imagem
-        ? `<img src="${propriedade.imagem}" class="card-img-top rounded-top-5" alt="${propriedade.nome}" />`
-        : `<div class="card-img-top rounded-top-5 d-flex align-items-center justify-content-center" style="height: 180px; background: #f3eae8;">
-               <i class="fa-solid fa-tractor fa-2x" style="color: #db4b1f;"></i>
-           </div>`;
-
+function criarCard(propriedade, totalAnimais) {
     return `
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 rounded-5 position-relative card-propriedade" data-propriedade='${JSON.stringify(propriedade)}'>
-                ${imagemHtml}
+                 <img src="${propriedade.imagem}" class="card-img-top rounded-top-5" alt="${propriedade.nome}" />
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
                         <h3
@@ -33,7 +29,7 @@ function criarCard(propriedade) {
                             ${propriedade.nome}
                         </h3>
                         <span class="badge rounded-pill">
-                            <i class="fa-solid fa-cow"></i> 0
+                            <i class="fa-solid fa-cow"></i> ${totalAnimais}
                         </span>
                     </div>
                     <p><i class="bi bi-geo-alt"></i> ${propriedade.cidade}, ${propriedade.estado}</p>
@@ -73,6 +69,15 @@ async function carregarPropriedades() {
         botaoMobile.style.visibility = "visible";
         container.innerHTML = propriedades.map(criarCard).join("");
     }
+
+    // Contagem dos animais
+    const contagens = await Promise.all(
+        propriedades.map(p => animalService.contarPorPropriedade(p.id))
+    );
+
+    container.innerHTML = propriedades
+        .map((p, i) => criarCard(p, contagens[i]))
+        .join("");
 
     // Reativa tooltips nos cards recém-criados
     container.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((el) => {

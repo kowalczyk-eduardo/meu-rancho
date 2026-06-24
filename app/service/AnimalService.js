@@ -21,4 +21,10 @@ export default class AnimalService {
     async excluir(id) {
         await fetch(`${this.url}/${id}`, { method: "DELETE" });
     }
+
+    async contarPorPropriedade(propriedadeId) {
+        const resposta = await fetch(`${this.url}?propriedadeId=${propriedadeId}`);
+        const animais  = await resposta.json();
+        return animais.length;
+    }
 }

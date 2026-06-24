@@ -20,7 +20,17 @@ export default class PropriedadeService {
     }
 
     async excluir(id) {
+        // Busca todos os animais da propriedade
+        const animais = await fetch(`http://localhost:3000/animais?propriedadeId=${id}`);
+        const animaisJson = await animais.json();
+
+    // Exclui cada animal
+        await Promise.all(
+            animaisJson.map(animal =>
+                fetch(`http://localhost:3000/animais/${animal.id}`, { method: "DELETE" })
+            )
+        );
+        
         await fetch(`${this.url}/${id}`, { method: "DELETE" });
     }
-
 }
