@@ -21,7 +21,7 @@ Em andamento.
 ## 💻 Tecnologias e Dependências
 
 - **Framework CSS - Bootstrap:** O Bootstrap foi escolhido por oferecer responsividade nativa, componentes prontos, suporte a interações com JavaScript, além de ser um framework estável, atualizado e com licença livre.
-- **GiroRuralAPI:**  API responsável por fornecer dados relacionados ao agronegócio, como informações de propriedades, animais e indicadores de mercado.
+- **Open-Meteo:**  API responsável por fornecer dados climáticos e previsões meteorológicas. Através dela, é possível consultar informações de uma determinada localização geográfica, como temperatura atual, temperaturas máximas e mínimas, probabilidade de precipitação e previsão do tempo para os dias seguintes.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
@@ -56,13 +56,13 @@ Em andamento.
 #### RA4 - Aplicar bibliotecas de funções e componentes em JavaScript para aprimorar a interatividade de páginas web.
 
 - [x] ID 20 - Utiliza jQuery para manipulação do DOM e interatividade (eventos, animações, manipulação de elementos)
-- [ ] ID 21 - Integra e configura um plugin jQuery relevante (ex.: jQuery Mask Plugin).
+- [x] ID 21 - Integra e configura um plugin jQuery relevante (ex.: jQuery Mask Plugin).
 
 #### RA5 - Efetuar requisições assíncronas para uma API fake e APIs públicas, permitindo a obtenção e manipulação de dados dinamicamente.
 
 - [x] ID 22 - Realiza requisições assíncronas para uma API fake (ex.: JSON Server) para persistir dados de um formulário.
 - [x] ID 23 - Realiza requisições assíncronas para uma API fake para exibir dados na página.
-- [ ] ID 24 - Realiza requisições assíncronas para APIs públicas reais (OpenWeather, ViaCEP etc.), exibindo os dados e tratando erros.
+- [x] ID 24 - Realiza requisições assíncronas para APIs públicas reais (OpenWeather, ViaCEP etc.), exibindo os dados e tratando erros.
 
 ## 🚀 Manual de execução
 
