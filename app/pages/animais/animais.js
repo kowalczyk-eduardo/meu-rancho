@@ -161,7 +161,7 @@ async function carregarClima() {
         const { current, daily } = dados;
         const climaAtual = climaService.descricaoClima(current.weather_code);
 
-            // Monta o card "Agora"
+        // Monta o card "Agora"
         const cardAtual = `
             <div class="carousel-item active">
                 <div class="card-clima card rounded-4 border-0 p-3">

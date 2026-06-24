@@ -15,6 +15,14 @@
       "usuarioId": "QbA1abBdqD8",
       "imagem": "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531757/IMG_20241110_184047_HDR_2_bruvrc.jpg",
       "id": "Ijz-6e8Yo9Y"
+    },
+    {
+      "nome": "Vanda Oliveira Farm",
+      "cidade": "Campo Largo",
+      "estado": "PR",
+      "usuarioId": "QbA1abBdqD8",
+      "imagem": "https://res.cloudinary.com/dzkkqkuav/image/upload/q_100,f_auto,w_291,h_192/v1778531756/IMG_20260421_163200_czivg4.jpg",
+      "id": "1_VgmcH8Whw"
     }
   ],
   "animais": [
@@ -49,14 +57,6 @@
       "raca": "Limousin",
       "propriedadeId": "Ijz-6e8Yo9Y",
       "id": "2tSd7eq_UCY"
-    },
-    {
-      "brinco": "33",
-      "genero": "femea",
-      "idade": "25-36",
-      "raca": "Tabapuã",
-      "propriedadeId": "Ijz-6e8Yo9Y",
-      "id": "sKFVvT0gxOQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
