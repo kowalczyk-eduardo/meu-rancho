@@ -5,6 +5,18 @@
       "email": "eduardo@gmail.com",
       "senha": "Pitu04102005",
       "id": "QbA1abBdqD8"
+    },
+    {
+      "nome": "Eduardo Kowalczyk",
+      "email": "eduardokowalczyk2@gmail.com",
+      "senha": "Eduardo04",
+      "id": "PTNUBni0iRs"
+    },
+    {
+      "nome": "Teste",
+      "email": "asdasd@gmail",
+      "senha": "Teste0101",
+      "id": "GnxBLMCjKPc"
     }
   ],
   "propriedades": [
@@ -17,12 +29,20 @@
       "id": "Ijz-6e8Yo9Y"
     },
     {
-      "nome": "Vanda Oliveira Farm",
-      "cidade": "Campo Largo",
+      "nome": "Fazenda Nova",
+      "cidade": "Goioxim",
       "estado": "PR",
       "usuarioId": "QbA1abBdqD8",
-      "imagem": "https://res.cloudinary.com/dzkkqkuav/image/upload/q_100,f_auto,w_291,h_192/v1778531756/IMG_20260421_163200_czivg4.jpg",
-      "id": "1_VgmcH8Whw"
+      "imagem": "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531758/IMG_20250618_175025_e0y77l.jpg",
+      "id": "r7g0X1nR3x8"
+    },
+    {
+      "nome": "Teste",
+      "cidade": "Jaraguá Do Sul",
+      "estado": "SC",
+      "usuarioId": "QbA1abBdqD8",
+      "imagem": "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531757/IMG_20250704_181947_tkrsmp.jpg",
+      "id": "4PBCai9qLgc"
     }
   ],
   "animais": [

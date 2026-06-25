@@ -64,11 +64,13 @@ async function carregarPropriedades() {
         botaoDesktop.style.visibility = "hidden";
         botaoMobile.style.visibility = "hidden";
         container.innerHTML = criarCardVazio();
-    } else {
-        botaoDesktop.style.visibility = "visible";
-        botaoMobile.style.visibility = "visible";
-        container.innerHTML = propriedades.map(criarCard).join("");
-    }
+        return
+    } 
+
+    botaoDesktop.style.visibility = "visible";
+    botaoMobile.style.visibility = "visible";
+    container.innerHTML = propriedades.map(criarCard).join("");
+    
 
     // Contagem dos animais
     const contagens = await Promise.all(

@@ -19,7 +19,6 @@ $(function () {
             });
             $("button[type='submit']").before($alerta);
         }
-
         $alerta.text(mensagem).show();
     }
 

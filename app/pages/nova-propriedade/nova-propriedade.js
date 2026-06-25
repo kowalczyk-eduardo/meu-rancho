@@ -12,7 +12,7 @@ const usuario = JSON.parse(sessao);
 //  Imagens 
 const imagensDisponiveis = [
     "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531758/IMG_20250610_172801_kaiwk5.jpg",
-    "https://res.cloudinary.com/dzkkqkuav/image/upload/q_100,f_auto,w_291,h_192/v1778531756/IMG_20260421_163200_czivg4.jpg",
+    "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531756/IMG_20260421_163200_czivg4.jpg",
     "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531758/IMG_20250618_175025_e0y77l.jpg",
     "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531757/IMG_20250704_181947_tkrsmp.jpg",
     "https://res.cloudinary.com/dzkkqkuav/image/upload/q_auto,f_auto,w_291,h_192/v1778531757/IMG_20241110_184047_HDR_2_bruvrc.jpg",

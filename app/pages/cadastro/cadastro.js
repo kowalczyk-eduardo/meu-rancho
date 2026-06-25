@@ -3,6 +3,8 @@ import UsuarioService from "../../service/UsuarioService.js";
 
 const form  = document.getElementById("formCadastro");
 const senha = document.getElementById("senha");
+const inputNome = document.getElementById("nome");
+const inputEmail = document.getElementById("email");
 
 const service = new UsuarioService();
 
@@ -52,13 +54,22 @@ senha.addEventListener("blur", () => {
     }
 });
 
+inputNome.addEventListener("blur", () => {
+    if (inputNome.value.trim().length < 4) {
+        exibirErro(inputNome, "O nome deve ter pelo menos 4 caracteres.");
+    }
+});
+
+inputEmail.addEventListener("blur", () => {
+    if (!inputEmail.value.trim()) {
+        exibirErro(inputEmail, "Informe um e-mail válido.");
+    }
+});
+
 //  Submit do formulário 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const inputNome = document.getElementById("nome");
-    const inputEmail = document.getElementById("email");
-    const valor = senha.value;
     let valido = true;
 
     if (inputNome.value.trim().length < 4) {
@@ -71,16 +82,16 @@ form.addEventListener("submit", async (event) => {
         valido = false;
     }
 
-    if (valor.length < 8) {
+    if (senha.value.length < 8) {
         exibirErro(senha, "A senha deve possuir pelo menos 8 caracteres.");
         valido = false;
-    } else if (!/[A-Z]/.test(valor)) {
+    } else if (!/[A-Z]/.test(senha.value)) {
         exibirErro(senha, "A senha deve possuir uma letra maiúscula.");
         valido = false;
-    } else if (!/[a-z]/.test(valor)) {
+    } else if (!/[a-z]/.test(senha.value)) {
         exibirErro(senha, "A senha deve possuir uma letra minúscula.");
         valido = false;
-    } else if (!/\d/.test(valor)) {
+    } else if (!/\d/.test(senha.value)) {
         exibirErro(senha, "A senha deve possuir um número.");
         valido = false;
     }
@@ -90,13 +101,13 @@ form.addEventListener("submit", async (event) => {
     const usuario = new Usuario(
         inputNome.value.trim(),
         inputEmail.value.trim(),
-        valor
+        senha.value
     );
 
     try {
         await service.cadastrar(usuario);
         window.location.href = "../login/index.html";
     } catch {
-        exibirErro(inputEmail, "Não foi possível criar a conta. Verifique se o json-server está rodando.");
+        exibirErro(senha, "Não foi possível criar a conta. Verifique se o json-server está rodando.");
     }
 });
