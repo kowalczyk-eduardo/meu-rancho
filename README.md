@@ -16,7 +16,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ## 🌐 Site em Produção - GitHub Pages
 
-Em andamento.
+- [Meu Rancho](https://kowalczyk-eduardo.github.io/meu-rancho/)
 
 ## 💻 Tecnologias e Dependências
 
